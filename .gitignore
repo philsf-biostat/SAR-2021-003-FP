@@ -281,3 +281,6 @@ flycheck_*.el
 # .html files (Rmarkdown report visualization)
 *.html
 
+# client data is private
+/dataset/
+

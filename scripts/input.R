@@ -10,15 +10,25 @@ library(labelled)
 # raw.data <- readxl::read_excel("dataset/file.xls")
 
 # raw.data <- data.table(raw.data)
-dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx")
+# dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx")
+dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx", 
+                        # elimina colunas que não serão usadas (skip)
+                        col_types = c("numeric", "text", "text", 
+                                      "numeric", "numeric", "text", "text", 
+                                      "numeric", "text", "numeric", "numeric", 
+                                      "text", "numeric", "numeric", "text", 
+                                      "numeric", "numeric", "numeric", 
+                                      "skip", "skip", "skip", "skip", "skip", 
+                                      "skip", "skip", "skip", "skip"))
 dados.raw <- dados.raw %>%
   clean_names()
 
 # data cleaning -----------------------------------------------------------
 
-dados <- dados.raw %>%
-  # elimina colunas que não serão usadas
-  select(-(acetabulo:obs))
+dados <- dados.raw
+# dados <- dados.raw %>%
+#   # elimina colunas que não serão usadas
+#   select(-(acetabulo:obs))
 
 dados <- dados %>%
   # limpeza

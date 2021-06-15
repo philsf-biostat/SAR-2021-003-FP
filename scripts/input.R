@@ -3,6 +3,7 @@ library(readxl)
 # library(data.table)
 library(tidyverse)
 library(janitor)
+library(labelled)
 
 # data loading ------------------------------------------------------------
 # raw.data <- fread("dataset/file.csv")
@@ -38,3 +39,13 @@ dados <- dados %>%
   # preenche todos os NA em causa (assume que todos os NA são ativos)
   replace_na(list(causa = "Trabalhando"))
 
+# labels ------------------------------------------------------------------
+
+dados <- dados %>%
+  set_variable_labels(
+    idade_num = "Idade",
+    sexo = "Sexo",
+    tempo_de_espera = "Tempo de espera",
+    hhs = "HHS",
+    charlson = "Escore de Charlson"
+  )

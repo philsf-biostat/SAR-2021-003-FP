@@ -47,7 +47,20 @@ dados <- dados %>%
   # idade_num ao lado de idade para comparação
   mutate(idade_num = parse_number(idade), .after = idade) %>%
   # preenche todos os NA em causa (assume que todos os NA são ativos)
-  replace_na(list(causa = "Trabalhando"))
+  replace_na(list(causa = "Trabalhando")) %>%
+  # fatores
+  mutate(
+    sexo = factor(sexo),
+    renda = factor(renda),
+    causa = factor(causa),
+    escolaridade = factor(escolaridade),
+    motivo_da_atq = factor(motivo_da_atq),
+    deambulacao = factor(deambulacao),
+    medicacoes_em_uso = factor(medicacoes_em_uso),
+    uso_de_analgesicos = factor(uso_de_analgesicos),
+    anti_depressivos = factor(anti_depressivos),
+    # ano_atq = factor(ano_atq),
+  )
 
 # labels ------------------------------------------------------------------
 

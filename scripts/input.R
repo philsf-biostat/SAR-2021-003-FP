@@ -101,6 +101,7 @@ dados <- dados %>%
     deambulacao = "Deambulação",
     cirurgia_durante_a_espera = "Ciurgia (não ortop.) durante a espera",
     uso_de_analgesicos = "Uso de analgésicos",
+    medicacoes_em_uso = "Número de medicações em uso",
     anti_depressivos = "Uso de antidepressivos",
     motivo_da_atq = "Motivo da ATQ",
     # habitos_de_vida = "Hábitos de vida",

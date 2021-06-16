@@ -51,7 +51,7 @@ dados <- dados %>%
   # fatores
   mutate(
     sexo = factor(sexo),
-    renda = factor(renda),
+    renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),
     escolaridade = factor(escolaridade),
     motivo_da_atq = factor(motivo_da_atq, labels = c("Fraturas", "Coxartrose", "Osteonecrose", "Displasia", "Outros")),

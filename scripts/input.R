@@ -111,3 +111,9 @@ dados <- dados %>%
     charlson = "Escore de Charlson",
     charlson_faixa = "Escore de Charlson",
   )
+
+# dados clean (backup) ----------------------------------------------------
+
+dados_clean <- dados
+dados <- dados %>%
+  select(-c(id, idade, ano_atq))

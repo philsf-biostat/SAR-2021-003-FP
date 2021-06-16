@@ -47,5 +47,5 @@ dados %>% ggplot(aes(charlson, hhs)) + geom_jitter(alpha = .4)
 # tables ------------------------------------------------------------------
 
 dados %>%
-  select(-c(id, idade, ano_atq, aposentado, charlson)) %>%
+  select(-c(aposentado, charlson)) %>%
   gtsummary::tbl_summary() #%>% gtsummary::as_kable_extra()

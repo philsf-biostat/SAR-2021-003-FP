@@ -48,8 +48,8 @@ dados <- dados %>%
   mutate(idade_num = parse_number(idade), .after = idade) %>%
   # faixa de Charlson
   mutate(charlson_faixa = cut(charlson
-                              , breaks = c(-1, .05, .1, Inf)
-                              , labels = c("Até 5%", "5% a 10%", "Maior que 10%"))
+                              , breaks = c(-1, 0, .05, .1, Inf)
+                              , labels = c("0%" ,"0% a 5%", "5% a 10%", "Maior que 10%"))
          , .after = charlson) %>%
   # preenche todos os NA em causa (assume que todos os NA são ativos)
   replace_na(list(causa = "Trabalhando")) %>%

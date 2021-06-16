@@ -50,7 +50,10 @@ dados <- dados %>%
   replace_na(list(causa = "Trabalhando")) %>%
   # fatores
   mutate(
+    id = factor(id),
     sexo = factor(sexo),
+    aposentado = factor(aposentado),
+    cirurgia_durante_a_espera = factor(cirurgia_durante_a_espera),
     renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),
     escolaridade = factor(escolaridade, levels = 1:7, labels = c("Não alfabetizado", "Fund. incompleto", "Fundamental", "Méd. incompleto", "Médio", "Sup. incompleto", "Superior")),

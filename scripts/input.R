@@ -54,7 +54,7 @@ dados <- dados %>%
     renda = factor(renda),
     causa = factor(causa),
     escolaridade = factor(escolaridade),
-    motivo_da_atq = factor(motivo_da_atq),
+    motivo_da_atq = factor(motivo_da_atq, labels = c("Fraturas", "Coxartrose", "Osteonecrose", "Displasia", "Outros")),
     deambulacao = factor(deambulacao, levels = 1:5, labels = c("Livre", "Bengala", "Andador", "Cadeira de rodas", "Leito")),
     # medicacoes_em_uso = factor(medicacoes_em_uso),
     uso_de_analgesicos = factor(uso_de_analgesicos, labels = c("Nenhum", "AINES", "Opióides", "Analgésicos", "Vários")),

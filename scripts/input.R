@@ -86,9 +86,21 @@ dados <- dados %>%
 
 dados <- dados %>%
   set_variable_labels(
+    idade = "Idade",
     idade_num = "Idade",
     sexo = "Sexo",
-    tempo_de_espera = "Tempo de espera",
+    tempo_de_espera = "Tempo de espera (meses)",
+    escolaridade = "Escolaridade",
+    renda = "Renda familiar",
+    causa = "Aposentadoria",
+    deambulacao = "Deambulação",
+    cirurgia_durante_a_espera = "Ciurgia (não ortop.) durante a espera",
+    uso_de_analgesicos = "Uso de analgésicos",
+    anti_depressivos = "Uso de antidepressivos",
+    motivo_da_atq = "Motivo da ATQ",
+    # habitos_de_vida = "Hábitos de vida",
+    tabagismo = "Tabagismo",
+    etilismo = "Etilismo",
     hhs = "HHS",
     charlson = "Escore de Charlson"
   )

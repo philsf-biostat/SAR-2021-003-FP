@@ -62,6 +62,23 @@ dados <- dados %>%
     # ano_atq = factor(ano_atq),
   )
 
+# reshape de habitos_de_vida -> tabagismo e etilismo
+# reshape: valores = 1 | fill NA com 0
+dados <- dados %>%
+  # separar "1 2" em vars tidy
+  separate_rows(habitos_de_vida) %>%
+  # preparar variaveis para reshape
+  mutate(habitos_de_vida = case_when(
+    habitos_de_vida == "0" ~ "nenhum",
+    habitos_de_vida == "1" ~ "tabagismo",
+    habitos_de_vida == "2" ~ "etilismo"
+  ),
+  val = 1, # var sintetica temporaria
+  ) %>%
+  # reshape: valores = 1 | fill NA com 0, e remover "nenhum" = 0, 0
+  pivot_wider(names_from = habitos_de_vida, values_from = val, values_fill = 0) %>%
+  select(-nenhum)
+
 # labels ------------------------------------------------------------------
 
 dados <- dados %>%

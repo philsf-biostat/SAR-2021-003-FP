@@ -36,13 +36,13 @@ dados %>%
 
 dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*12)
 dados %>% ggplot(aes(idade_num)) + geom_histogram(binwidth = 10)
-dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = .1)
-dados %>% ggplot(aes(charlson +.001)) + geom_histogram(binwidth = .025) #+ scale_x_log10()
+dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = 10)
+dados %>% ggplot(aes(charlson)) + geom_histogram(binwidth = 2.5) #+ scale_x_log10()
 
 # correlacoes
-dados %>% ggplot(aes(charlson, medicacoes_em_uso)) + geom_jitter(alpha = .5, height = .05)
-dados %>% ggplot(aes(uso_de_analgesicos, charlson)) + geom_boxplot() + geom_jitter(alpha = .3, height = .025, width = .2)
-dados %>% ggplot(aes(charlson, hhs)) + geom_jitter(alpha = .4)
+dados %>% ggplot(aes(medicacoes_em_uso, charlson)) + geom_jitter(alpha = .5)
+dados %>% ggplot(aes(uso_de_analgesicos, charlson)) + geom_boxplot() + geom_jitter(alpha = .3)
+dados %>% ggplot(aes(hhs, charlson)) + geom_jitter(alpha = .4)
 
 # tables ------------------------------------------------------------------
 

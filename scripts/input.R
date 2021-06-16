@@ -51,6 +51,8 @@ dados <- dados %>%
                               , breaks = c(-1, 0, .05, .1, Inf)
                               , labels = c("0%" ,"0% a 5%", "5% a 10%", "Maior que 10%"))
          , .after = hhs) %>%
+  # escores como porcentagem
+  mutate(charlson = charlson*100, hhs = hhs*100) %>%
   # preenche todos os NA em causa (assume que todos os NA são ativos)
   replace_na(list(causa = "Trabalhando")) %>%
   # fatores

@@ -39,5 +39,5 @@ dados %>% ggplot(aes(charlson +.001)) + geom_histogram(binwidth = .025) #+ scale
 # tables ------------------------------------------------------------------
 
 dados %>%
-  select(-c(id, idade, ano_atq, aposentado)) %>%
+  select(-c(id, idade, ano_atq, aposentado, charlson)) %>%
   gtsummary::tbl_summary() #%>% gtsummary::as_kable_extra()

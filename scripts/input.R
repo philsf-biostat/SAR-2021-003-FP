@@ -46,6 +46,11 @@ dados <- dados %>%
 dados <- dados %>%
   # idade_num ao lado de idade para comparação
   mutate(idade_num = parse_number(idade), .after = idade) %>%
+  # faixa de Charlson
+  mutate(charlson_faixa = cut(charlson
+                              , breaks = c(-1, .05, .1, Inf)
+                              , labels = c("Até 5%", "5% a 10%", "Maior que 10%"))
+         , .after = charlson) %>%
   # preenche todos os NA em causa (assume que todos os NA são ativos)
   replace_na(list(causa = "Trabalhando")) %>%
   # fatores
@@ -102,5 +107,6 @@ dados <- dados %>%
     tabagismo = "Tabagismo",
     etilismo = "Etilismo",
     hhs = "HHS",
-    charlson = "Escore de Charlson"
+    charlson = "Escore de Charlson",
+    charlson_faixa = "Escore de Charlson",
   )

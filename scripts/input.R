@@ -50,14 +50,17 @@ dados <- dados %>%
   replace_na(list(causa = "Trabalhando")) %>%
   # fatores
   mutate(
+    id = factor(id),
     sexo = factor(sexo),
-    renda = factor(renda),
+    aposentado = factor(aposentado),
+    cirurgia_durante_a_espera = factor(cirurgia_durante_a_espera),
+    renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),
-    escolaridade = factor(escolaridade),
-    motivo_da_atq = factor(motivo_da_atq),
-    deambulacao = factor(deambulacao),
+    escolaridade = factor(escolaridade, levels = 1:7, labels = c("Não alfabetizado", "Fund. incompleto", "Fundamental", "Méd. incompleto", "Médio", "Sup. incompleto", "Superior")),
+    motivo_da_atq = factor(motivo_da_atq, labels = c("Fraturas", "Coxartrose", "Osteonecrose", "Displasia", "Outros")),
+    deambulacao = factor(deambulacao, levels = 1:5, labels = c("Livre", "Bengala", "Andador", "Cadeira de rodas", "Leito")),
     # medicacoes_em_uso = factor(medicacoes_em_uso),
-    uso_de_analgesicos = factor(uso_de_analgesicos),
+    uso_de_analgesicos = factor(uso_de_analgesicos, labels = c("Nenhum", "AINES", "Opióides", "Analgésicos", "Vários")),
     anti_depressivos = factor(anti_depressivos),
     # ano_atq = factor(ano_atq),
   )

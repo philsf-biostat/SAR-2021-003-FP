@@ -46,6 +46,8 @@ dados <- dados %>%
 dados <- dados %>%
   # idade_num ao lado de idade para comparação
   mutate(idade_num = parse_number(idade), .after = idade) %>%
+  # tempo em anos ao lado do tempo original em meses
+  mutate(tempo_anos = floor(tempo_de_espera/12)) %>%
   # faixa de Charlson
   mutate(charlson_faixa = cut(charlson
                               , breaks = c(-1, 0, .05, .1, Inf)
@@ -97,6 +99,7 @@ dados <- dados %>%
     idade_num = "Idade",
     sexo = "Sexo",
     tempo_de_espera = "Tempo de espera (meses)",
+    tempo_anos = "Tempo de espera (anos)",
     escolaridade = "Escolaridade",
     renda = "Renda familiar",
     causa = "Aposentadoria",

@@ -39,6 +39,7 @@ dados %>%
   select(idade_num, tempo_de_espera, charlson, hhs) %>% skim()
 
 dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*12)
+dados %>% transmute(anos = floor(tempo_de_espera/12)) %>% ggplot(aes(anos)) + geom_histogram(binwidth = 1)
 dados %>% ggplot(aes(idade_num)) + geom_histogram(binwidth = 10)
 dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = 10)
 dados %>% ggplot(aes(charlson)) + geom_histogram(binwidth = 2.5) #+ scale_x_log10()

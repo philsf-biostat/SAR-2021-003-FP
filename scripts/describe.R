@@ -42,7 +42,13 @@ dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*1
 dados %>% ggplot(aes(tempo_anos)) + geom_bar()
 dados %>% ggplot(aes(idade_num)) + geom_histogram(binwidth = 10)
 dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = 10)
-dados %>% ggplot(aes(charlson)) + geom_histogram(binwidth = 2.5) #+ scale_x_log10()
+
+# charlson - busca de transformacao
+dados %>% ggplot(aes(charlson)) + geom_histogram(binwidth = 2.5) # multimodal
+dados %>% ggplot(aes(charlson)) + geom_bar()
+dados %>% ggplot(aes(charlson+.001)) + geom_density()
+dados %>% ggplot(aes(log10(charlson+.001))) + geom_density() # log10 é bimodal
+dados %>% ggplot(aes(sqrt(charlson+.001))) + geom_density()
 
 # correlacoes entre covariáveis
 dados %>% ggplot(aes(medicacoes_em_uso, charlson)) + geom_jitter(alpha = .5)

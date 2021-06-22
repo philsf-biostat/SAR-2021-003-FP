@@ -60,6 +60,7 @@ dados %>% ggplot(aes(charlson, tempo_de_espera)) + geom_jitter(alpha = .5)
 dados %>% ggplot(aes(hhs, tempo_de_espera)) + geom_jitter(alpha = .5)
 dados %>% ggplot(aes(factor(medicacoes_em_uso), tempo_de_espera)) + geom_jitter(alpha = .5, height = .1, width = .1) + geom_boxplot(alpha = 0)
 dados %>% ggplot(aes(uso_de_analgesicos, tempo_de_espera)) + geom_jitter(alpha = .5, height = .1, width = .1) + geom_boxplot(alpha = 0)
+dados %>% ggplot(aes(anti_depressivos, tempo_de_espera)) + geom_jitter(alpha = .5, height = .1, width = .1) + geom_boxplot(alpha = 0)
 
 
 

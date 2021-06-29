@@ -5,7 +5,7 @@
 <!-- - v02: substituir ppp01/ppp02 pelo projeto -->
 <!-- - Remover esse bloco -->
 
-# Análise de Dados projeto Fernando Pina (Florianópolis, 2021)
+# Análise de Dados projeto Fernando Pina (2021)
 
 título
 

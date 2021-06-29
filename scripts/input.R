@@ -54,6 +54,9 @@ dados <- dados %>%
 
 # data wrangling ----------------------------------------------------------
 
+lab_diag <- c("Fratura Periprotética", "Infecção", "Soltura Asséptica Acetabular", "Soltura Asséptica Femoral", "Soltura Asséptica de Ambos")
+lab_escol <- c("Não alfabetizado", "Fund. incompleto", "Fundamental", "Méd. incompleto", "Médio", "Sup. incompleto", "Superior")
+
 dados <- dados %>%
   # idade_num ao lado de idade para comparação
   mutate(idade_num = parse_number(idade), .after = idade) %>%
@@ -76,15 +79,15 @@ dados <- dados %>%
     cirurgia_durante_a_espera = factor(cirurgia_durante_a_espera),
     renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),
-    escolaridade = factor(escolaridade, levels = 1:7, labels = c("Não alfabetizado", "Fund. incompleto", "Fundamental", "Méd. incompleto", "Médio", "Sup. incompleto", "Superior")),
+    escolaridade = factor(escolaridade, levels = 1:7, labels = lab_escol),
     motivo_da_atq = factor(motivo_da_atq, labels = c("Fraturas", "Coxartrose", "Osteonecrose", "Displasia", "Outros")),
     deambulacao = factor(deambulacao, levels = 1:5, labels = c("Livre", "Bengala", "Andador", "Cadeira de rodas", "Leito")),
     # medicacoes_em_uso = factor(medicacoes_em_uso),
     uso_de_analgesicos = factor(uso_de_analgesicos, labels = c("Nenhum", "AINES", "Opióides", "Analgésicos", "Vários")),
     anti_depressivos = factor(anti_depressivos),
     # ano_atq = factor(ano_atq),
-    motivo = factor(motivo, levels = 1:5, labels = c("Fratura Periprotética", "Infecção", "Soltura Asséptica Acetabular", "Soltura Asséptica Femoral", "Soltura Asséptica de Ambos")),
-    diagnostico_atual = factor(diagnostico_atual, levels = 1:5, labels = c("Fratura Periprotética", "Infecção", "Soltura Asséptica Acetabular", "Soltura Asséptica Femoral", "Soltura Asséptica de Ambos")),
+    motivo = factor(motivo, levels = 1:5, labels = diagnosticos),
+    diagnostico_atual = factor(diagnostico_atual, levels = 1:5, labels = diagnosticos),
     paprosky = factor(paprosky, levels = 1:7, labels = c("1", "2A", "2B", "2C", "3A", "3B", "3C")),
   )
 

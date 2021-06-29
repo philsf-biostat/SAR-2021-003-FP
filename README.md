@@ -5,7 +5,7 @@
 <!-- - v02: substituir ppp01/ppp02 pelo projeto -->
 <!-- - Remover esse bloco -->
 
-# Análise de Dados projeto xxx (Local, aaaa)
+# Análise de Dados projeto Fernando Pina (Florianópolis, 2021)
 
 título
 
@@ -14,7 +14,7 @@ título
 1. Análise descritiva
 1. Análise inferencial
 1. Modelagem estatística
-1. Análise de poder
+<!-- 1. Análise de poder -->
 
 ## Documentos
 
@@ -26,8 +26,8 @@ título
 - Download
 <!-- - [Download][sappdf-v01] -->
 
-[sapviz-v01]: report/SAP_xxx-v01.md
-[sappdf-v01]: report/SAP_xxx-v01.pdf?raw=true
+[sapviz-v01]: report/SAP_analise_dados_FP_2021a-v01.md
+[sappdf-v01]: report/SAP_analise_dados_FP_2021a-v01.pdf?raw=true
 
 ## Relatório de Análise Estatística
 
@@ -48,15 +48,15 @@ título
 <!-- - [Download][pdf-v01] -->
 
 
-[releases]: https://github.com/philsf-biostat/xxx/releases/
-[milestone-v01]: https://github.com/philsf-biostat/xxx/milestone/mmm01
-[reportviz-v01]: report/xxx-v01.md
-[docx-v01]: report/xxx-v01.docx?raw=true
-[pdf-v01]: report/xxx-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/xxx/projects/ppp01
+[releases]: https://github.com/philsf-biostat/analise_dados_FP_2021a/releases/
+[milestone-v01]: https://github.com/philsf-biostat/analise_dados_FP_2021a/milestone/mmm01
+[reportviz-v01]: report/analise_dados_FP_2021a-v01.md
+[docx-v01]: report/analise_dados_FP_2021a-v01.docx?raw=true
+[pdf-v01]: report/analise_dados_FP_2021a-v01.pdf?raw=true
+[v01-project]: https://github.com/philsf-biostat/analise_dados_FP_2021a/projects/ppp01
 
-[milestone-v02]: https://github.com/philsf-biostat/xxx/milestone/mmm02
-[reportviz-v02]: report/xxx-v02.md
-[docx-v02]: report/xxx-v02.docx?raw=true
-[pdf-v02]: report/xxx-v02.pdf?raw=true
-[v02-project]: https://github.com/philsf-biostat/xxx/projects/ppp02
+[milestone-v02]: https://github.com/philsf-biostat/analise_dados_FP_2021a/milestone/mmm02
+[reportviz-v02]: report/analise_dados_FP_2021a-v02.md
+[docx-v02]: report/analise_dados_FP_2021a-v02.docx?raw=true
+[pdf-v02]: report/analise_dados_FP_2021a-v02.pdf?raw=true
+[v02-project]: https://github.com/philsf-biostat/analise_dados_FP_2021a/projects/ppp02

@@ -83,6 +83,9 @@ dados <- dados %>%
     uso_de_analgesicos = factor(uso_de_analgesicos, labels = c("Nenhum", "AINES", "Opióides", "Analgésicos", "Vários")),
     anti_depressivos = factor(anti_depressivos),
     # ano_atq = factor(ano_atq),
+    motivo = factor(motivo, levels = 1:5, labels = c("Fratura Periprotética", "Infecção", "Soltura Asséptica Acetabular", "Soltura Asséptica Femoral", "Soltura Asséptica de Ambos")),
+    diagnostico_atual = factor(diagnostico_atual, levels = 1:5, labels = c("Fratura Periprotética", "Infecção", "Soltura Asséptica Acetabular", "Soltura Asséptica Femoral", "Soltura Asséptica de Ambos")),
+    paprosky = factor(paprosky, levels = 1:7, labels = c("1", "2A", "2B", "2C", "3A", "3B", "3C")),
   )
 
 # reshape de habitos_de_vida -> tabagismo e etilismo

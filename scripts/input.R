@@ -132,4 +132,4 @@ dados <- dados %>%
 
 dados_clean <- dados
 dados <- dados %>%
-  select(-c(id, idade, ano_atq, acetabulo, femur, contralateral, cidade, obs))
+  select(-c(id, data_de_nascimento, idade, motivo_outro, acetabulo, femur, contralateral, cidade, obs))

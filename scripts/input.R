@@ -33,6 +33,9 @@ dados <- dados.raw
 dados <- dados %>%
   # limpeza
   mutate(
+    # limpar observações
+    cirurgia_durante_a_espera = str_match(cirurgia_durante_a_espera, ".{3}")
+  ) %>% mutate(
     id = as.character(id),
     aposentado = str_to_title(aposentado),
     causa = str_to_title(causa),

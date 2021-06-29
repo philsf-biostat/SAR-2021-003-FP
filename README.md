@@ -49,11 +49,11 @@ título
 
 
 [releases]: https://github.com/philsf-biostat/analise_dados_FP_2021a/releases/
-[milestone-v01]: https://github.com/philsf-biostat/analise_dados_FP_2021a/milestone/mmm01
+[milestone-v01]: https://github.com/philsf-biostat/analise_dados_FP_2021a/milestone/1
 [reportviz-v01]: report/analise_dados_FP_2021a-v01.md
 [docx-v01]: report/analise_dados_FP_2021a-v01.docx?raw=true
 [pdf-v01]: report/analise_dados_FP_2021a-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_FP_2021a/projects/ppp01
+[v01-project]: https://github.com/philsf-biostat/analise_dados_FP_2021a/projects/1
 
 [milestone-v02]: https://github.com/philsf-biostat/analise_dados_FP_2021a/milestone/mmm02
 [reportviz-v02]: report/analise_dados_FP_2021a-v02.md

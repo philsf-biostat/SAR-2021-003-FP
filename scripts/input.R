@@ -10,16 +10,16 @@ library(labelled)
 # raw.data <- readxl::read_excel("dataset/file.xls")
 
 # raw.data <- data.table(raw.data)
-# dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx")
-dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx", 
-                        # elimina colunas que não serão usadas (skip)
-                        col_types = c("numeric", "text", "text", 
-                                      "numeric", "numeric", "text", "text", 
-                                      "numeric", "text", "numeric", "numeric", 
-                                      "text", "numeric", "numeric", "text", 
-                                      "numeric", "numeric", "numeric", 
-                                      "skip", "skip", "skip", "skip", "skip", 
-                                      "skip", "skip", "skip", "skip"))
+dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx")
+# dados.raw <- read_excel("dataset/PLANILHA UNIFORMIZADA.xlsx", 
+#                         # elimina colunas que não serão usadas (skip)
+#                         col_types = c("numeric", "text", "text", 
+#                                       "numeric", "numeric", "text", "text", 
+#                                       "numeric", "text", "numeric", "numeric", 
+#                                       "text", "numeric", "numeric", "text", 
+#                                       "numeric", "numeric", "numeric", 
+#                                       "skip", "skip", "skip", "skip", "skip", 
+#                                       "skip", "skip", "skip", "skip"))
 dados.raw <- dados.raw %>%
   clean_names()
 
@@ -39,7 +39,15 @@ dados <- dados %>%
     cirurgia_durante_a_espera = str_to_title(cirurgia_durante_a_espera),
     anti_depressivos = str_to_title(anti_depressivos),
     # contralateral = str_to_title(contralateral),
-  )
+  ) %>% mutate( paprosky = case_when(
+      paprosky == "um" ~ "1",
+      paprosky == "dois" ~ "2",
+      paprosky == "três" ~ "3",
+      paprosky == "quatro" ~ "4",
+      paprosky == "seis" ~ "6",
+      TRUE ~ paprosky
+    ) ) %>%
+  mutate( paprosky = as.numeric(paprosky) )
 
 # data wrangling ----------------------------------------------------------
 
@@ -121,4 +129,4 @@ dados <- dados %>%
 
 dados_clean <- dados
 dados <- dados %>%
-  select(-c(id, idade, ano_atq))
+  select(-c(id, idade, ano_atq, acetabulo, femur, contralateral, cidade, obs))

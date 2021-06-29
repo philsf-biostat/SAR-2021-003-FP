@@ -129,6 +129,10 @@ dados <- dados %>%
     hhs = "HHS",
     charlson = "Escore de Charlson",
     charlson_faixa = "Escore de Charlson",
+    revisoes = "Número de revisões",
+    motivo = "Motivo da revisão",
+    diagnostico_atual = "Diagnóstico atual",
+    paprosky = "Classificação Paprosky",
   )
 
 # dados clean (backup) ----------------------------------------------------

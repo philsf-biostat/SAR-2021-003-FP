@@ -1,14 +1,14 @@
 # setup -------------------------------------------------------------------
 
 # library(Hmisc) # describe
-library(skimr) # skim
+# library(skimr) # skim
 # library(tableone)
 library(gtsummary)
 # library(gmodels) # CrossTable
 
 # exploratory -------------------------------------------------------------
 
-dados %>% skim()
+dados %>% skimr::skim()
 
 # categoricas
 
@@ -36,7 +36,7 @@ dados %>% ggplot(aes(medicacoes_em_uso)) + geom_bar()
 # numericas
 
 dados %>%
-  select(idade_num, tempo_de_espera, charlson, hhs) %>% skim()
+  select(idade_num, tempo_de_espera, charlson, hhs) %>% skimr::skim()
 
 dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*12)
 dados %>% ggplot(aes(tempo_anos)) + geom_bar()

@@ -87,10 +87,19 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 ## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
+
+
 Foram coletadas respostas de 58 pacientes que aguardam cirurgia de revisão de ATQ (Tabela 1).
-A idade média (DP) é 63 anos (11 anos).
-A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres.
-A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idoso (idade média 62 anos), com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
+A idade média (DP) é 63 (11) anos.
+Os níveis de escolaridade mais frequentemente observados foram relativamente baixos com
+45 (78%) pessoas possuindo Fundamental incompleto e
+11 (19%) pessoas no nível Fundamental completo.
+Os hábitos de vida comumente associados a comorbidades não foram prevalentes nesta amostra, onde apenas 9 (16%) são fumantes e 2 (3.4%) fazem uso frequente de álcool.
+A amostra parece ser composta predominantemente por pessoas de baixa renda, pois 46 (79%) possuem renda de até 1 salário mínimo, seguida de 10 (17%) pessoas recebem de 2 a 5 salários mínimos.
+A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apontada em 41 (71%); apenas 6 (10%) pessoas permaneciam em atividade laboral no momento da apresentação do questionário.
+
+A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
+A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
 
 
 Table: **Tabela 1** Características demográficas
@@ -227,6 +236,12 @@ Table: **Tabela 3** Características clínicas durante a espera
 # Exceções e Observações
 
 # Conclusões
+
+O perfil do paciente que aguarda cirurgia de revisão de ATQ é composto primariamente por
+idosos aposentados por invalidez,
+com baixa escolaridade
+e de baixa renda.
+Ambos os sexos foram igualmente representados na amostra, tanto na avaliação global quanto comparando com as outras características demográficas.
 
 # Referências
 

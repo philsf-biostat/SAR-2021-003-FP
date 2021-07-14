@@ -102,10 +102,29 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
+```{r desc_indiv}
+dem.idade <- inline_text(desc_dem, variable = idade_num, column = "stat_0")
+dem.fund.inc <- inline_text(desc_dem, variable = escolaridade, level = "Fund. incompleto", column = "stat_0")
+dem.fund.com <- inline_text(desc_dem, variable = escolaridade, level = "Fundamental", column = "stat_0")
+dem.etilismo <- inline_text(desc_dem, variable = etilismo, column = "stat_0")
+dem.tabagismo <- inline_text(desc_dem, variable = tabagismo, column = "stat_0")
+dem.renda.ate1 <- inline_text(desc_dem, variable = renda, column = "stat_0", level = "Até 1 SM")
+dem.renda.2a5 <- inline_text(desc_dem, variable = renda, column = "stat_0", level = "2 a 5 SM")
+dem.trab <- inline_text(desc_dem, variable = causa, column = "stat_0", level = "Trabalhando")
+dem.apos.inv <- inline_text(desc_dem, variable = causa, column = "stat_0", level = "Invalidez")
+```
+
 Foram coletadas respostas de 58 pacientes que aguardam cirurgia de revisão de ATQ (Tabela 1).
-A idade média (DP) é 63 anos (11 anos).
-A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idoso (idade média 62 anos), com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
-A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres.
+A idade média (DP) é `r dem.idade` anos.
+Os níveis de escolaridade mais frequentemente observados foram relativamente baixos com
+`r dem.fund.inc` pessoas possuindo Fundamental incompleto e
+`r dem.fund.com` pessoas no nível Fundamental completo.
+Os hábitos de vida comumente associados a comorbidades não foram prevalentes nesta amostra, onde apenas `r dem.tabagismo` são fumantes e `r dem.etilismo` fazem uso frequente de álcool.
+A amostra parece ser composta predominantemente por pessoas de baixa renda, pois `r dem.renda.ate1` possuem renda de até 1 salário mínimo, seguida de `r dem.renda.2a5` pessoas recebem de 2 a 5 salários mínimos.
+A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apontada em `r dem.apos.inv`; apenas `r dem.trab` pessoas permaneciam em atividade laboral no momento da apresentação do questionário.
+
+A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
+A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
 
 ```{r desc_dem}
 desc_dem %>% as_kable(align = "lc",
@@ -174,6 +193,12 @@ desc_clin %>% as_kable(align = "lc",
 # Exceções e Observações
 
 # Conclusões
+
+O perfil do paciente que aguarda cirurgia de revisão de ATQ é composto primariamente por
+idosos aposentados por invalidez,
+com baixa escolaridade
+e de baixa renda.
+Ambos os sexos foram igualmente representados na amostra, tanto na avaliação global quanto comparando com as outras características demográficas.
 
 # Referências
 

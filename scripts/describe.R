@@ -102,14 +102,24 @@ vars_clin <- c(
   "uso_de_analgesicos"
 )
 
+# configurar tema gtsummary
+theme_gtsummary_language(language = "pt") # traduzir
+theme_gtsummary_mean_sd() # media/DP
+
 desc_dem <- dados %>%
   select(all_of(vars_dem)) %>%
-  gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
+  tbl_summary() %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels()
 
 desc_cir <- dados %>%
   select(all_of(vars_cir)) %>%
-  gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
+  tbl_summary() %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels()
 
 desc_clin <- dados %>%
   select(all_of(vars_clin)) %>%
-  gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
+  tbl_summary() %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels()

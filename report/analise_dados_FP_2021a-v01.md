@@ -85,7 +85,7 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 # Resultados
 
-## Análise descritiva
+## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
 
 |**Characteristic** |**N = 58** |
@@ -190,6 +190,8 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 
 Table: **Tabela 3** Características clínicas durante a espera
 
+## Tempo de espera de revisão de ATQ
+
 
 
 
@@ -215,7 +217,7 @@ Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segu
 
 **Figura 1** Distribuição do tempo de espera para cirurgia de revisão
 
-## Análise inferencial
+## Características clínicas dos pacientes durante a espera
 
 # Exceções e Observações
 

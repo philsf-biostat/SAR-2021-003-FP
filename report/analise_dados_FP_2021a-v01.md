@@ -136,9 +136,7 @@ Table: **Tabela 1** Características demográficas
 |1                                     |13 (33%)   |
 |2                                     |22 (56%)   |
 |Faltantes                             |19         |
-|Ciurgia (não ortop.) durante a espera |           |
-|Não                                   |55 (95%)   |
-|Sim                                   |3 (5.2%)   |
+|Ciurgia (não ortop.) durante a espera |3 (5.2%)   |
 
 Table: **Tabela 2** Características clínicas relativas à ATQ
 
@@ -153,9 +151,7 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |Soltura Asséptica Femoral    |1 (2.1%)    |
 |Soltura Asséptica de Ambos   |10 (21%)    |
 |Faltantes                    |11          |
-|Uso de antidepressivos       |            |
-|Não                          |50 (86%)    |
-|Sim                          |8 (14%)     |
+|Uso de antidepressivos       |8 (14%)     |
 |Escore de Charlson           |            |
 |0%                           |29 (51%)    |
 |0% a 5%                      |14 (25%)    |

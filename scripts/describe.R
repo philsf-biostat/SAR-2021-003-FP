@@ -82,23 +82,25 @@ vars_dem <- c(
   "etilismo"
 )
 
+vars_clin <- c(
+  "motivo_da_atq",
+  "deambulacao",
+  "tempo_anos",
+  "cirurgia_durante_a_espera",
+  "revisoes",
+  "medicacoes_em_uso",
+  "uso_de_analgesicos",
+  "anti_depressivos",
+  "diagnostico_atual",
+  "charlson_faixa",
+  "hhs",
+  "paprosky"
+)
+
 desc_dem <- dados %>%
   select(all_of(vars_dem)) %>%
   gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
 
 desc_clin <- dados %>%
-  select(c(
-    motivo_da_atq,
-    deambulacao,
-    revisoes,
-    cirurgia_durante_a_espera,
-    tempo_anos,
-    medicacoes_em_uso,
-    uso_de_analgesicos,
-    anti_depressivos,
-    diagnostico_atual,
-    charlson_faixa,
-    hhs,
-    paprosky,
-    )) %>%
+  select(all_of(vars_clin)) %>%
   gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()

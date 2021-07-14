@@ -136,6 +136,13 @@ Table: **Tabela 1** Características demográficas
 |1                                     |13 (33%)   |
 |2                                     |22 (56%)   |
 |Faltantes                             |19         |
+|Motivo de revisões prévias            |           |
+|Fratura Periprotética                 |1 (2.9%)   |
+|Infecção                              |2 (5.7%)   |
+|Soltura Asséptica Acetabular          |23 (66%)   |
+|Soltura Asséptica Femoral             |2 (5.7%)   |
+|Soltura Asséptica de Ambos            |7 (20%)    |
+|Faltantes                             |23         |
 |Ciurgia (não ortop.) durante a espera |3 (5.2%)   |
 
 Table: **Tabela 2** Características clínicas relativas à ATQ

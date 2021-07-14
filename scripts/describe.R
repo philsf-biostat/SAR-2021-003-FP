@@ -86,6 +86,7 @@ vars_cir <- c(
   "motivo_da_atq",
   "deambulacao",
   "revisoes",
+  "motivo",
   "cirurgia_durante_a_espera"
 )
 

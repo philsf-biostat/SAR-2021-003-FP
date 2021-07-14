@@ -102,17 +102,15 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
-```{r}
-desc_dem %>% as_kable()
+```{r desc_dem}
+desc_dem %>% as_kable(align = "c",
+                      caption = "**Tabela 1** Características demográficas")
 ```
 
-Table: **Tabela 1** Características demográficas
-
-```{r}
-desc_cir %>% as_kable()
+```{r desc_cir}
+desc_cir %>% as_kable(align = "c",
+                      caption = "**Tabela 2** Características clínicas relativas à ATQ")
 ```
-
-Table: **Tabela 2** Características clínicas relativas à ATQ
 
 ## Tempo de espera de revisão de ATQ
 
@@ -163,11 +161,10 @@ Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segu
 
 ## Características clínicas dos pacientes durante a espera
 
-```{r}
-desc_clin %>% as_kable()
+```{r desc_clin}
+desc_clin %>% as_kable(align = "c",
+                         caption = "**Tabela 3** Características clínicas durante a espera")
 ```
-
-Table: **Tabela 3** Características clínicas durante a espera
 
 # Exceções e Observações
 

@@ -72,16 +72,18 @@ dados %>% ggplot(aes(anti_depressivos, tempo_de_espera)) + geom_jitter(alpha = .
 
 # tables ------------------------------------------------------------------
 
+vars_dem <- c(
+  "idade_num",
+  "sexo",
+  "escolaridade",
+  "renda",
+  "causa",
+  "tabagismo",
+  "etilismo"
+)
+
 desc_dem <- dados %>%
-  select(c(
-    idade_num,
-    sexo,
-    escolaridade,
-    renda,
-    causa,
-    tabagismo,
-    etilismo
-    )) %>%
+  select(all_of(vars_dem)) %>%
   gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
 
 desc_clin <- dados %>%

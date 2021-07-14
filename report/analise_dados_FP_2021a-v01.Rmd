@@ -109,10 +109,16 @@ desc_dem %>% as_kable()
 Table: **Tabela 1** Características demográficas
 
 ```{r}
+desc_cir %>% as_kable()
+```
+
+Table: **Tabela 2** Características clínicas relativas à ATQ
+
+```{r}
 desc_clin %>% as_kable()
 ```
 
-Table: **Tabela 2** Características clínicas
+Table: **Tabela 3** Características clínicas durante a espera
 
 ## Análise inferencial
 

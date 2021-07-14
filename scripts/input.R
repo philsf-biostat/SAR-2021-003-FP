@@ -75,7 +75,7 @@ dados <- dados %>%
   mutate(
     id = factor(id),
     sexo = factor(sexo),
-    aposentado = factor(aposentado),
+    aposentado = as.numeric(aposentado == "Sim"),
     cirurgia_durante_a_espera = as.numeric(cirurgia_durante_a_espera == "Sim"),
     renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),

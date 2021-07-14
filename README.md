@@ -7,23 +7,23 @@
 
 # Análise de Dados projeto Fernando Pina (2021)
 
-título
+Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina
 
 ## Análises realizadas
 
 1. Análise descritiva
-1. Análise inferencial
-1. Modelagem estatística
+<!-- 1. Análise inferencial -->
+<!-- 1. Modelagem estatística -->
 <!-- 1. Análise de poder -->
 
 ## Documentos
 
-## Plano de Análise Estatística
+<!-- ## Plano de Análise Estatística -->
 
-**SAP** - Plano de Análise Estatística
+<!-- **SAP** - Plano de Análise Estatística -->
 
-- [Visualização online][sapviz-v01]
-- Download
+<!-- - [Visualização online][sapviz-v01] -->
+<!-- - Download -->
 <!-- - [Download][sappdf-v01] -->
 
 [sapviz-v01]: report/SAP_analise_dados_FP_2021a-v01.md

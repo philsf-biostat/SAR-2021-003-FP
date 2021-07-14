@@ -110,16 +110,19 @@ desc_dem <- dados %>%
   select(all_of(vars_dem)) %>%
   tbl_summary() %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
-  bold_labels()
+  bold_labels() %>%
+  modify_table_styling(columns = "label", align = "c") 
 
 desc_cir <- dados %>%
   select(all_of(vars_cir)) %>%
   tbl_summary() %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
-  bold_labels()
+  bold_labels() %>%
+  modify_table_styling(columns = "label", align = "c")
 
 desc_clin <- dados %>%
   select(all_of(vars_clin)) %>%
   tbl_summary() %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
-  bold_labels()
+  bold_labels() %>%
+  modify_table_styling(columns = "label", align = "c")

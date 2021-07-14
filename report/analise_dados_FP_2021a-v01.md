@@ -90,62 +90,62 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 Table: **Tabela 1** Características demográficas
 
-| **Características dos pacientes** | **N = 58** |
-|:---------------------------------:|:----------:|
-|             __Idade__             |  63 (11)   |
-|             __Sexo__              |            |
-|                 F                 |  27 (47%)  |
-|                 M                 |  31 (53%)  |
-|         __Escolaridade__          |            |
-|         Não alfabetizado          |   0 (0%)   |
-|         Fund. incompleto          |  45 (78%)  |
-|            Fundamental            |  11 (19%)  |
-|          Méd. incompleto          |   0 (0%)   |
-|               Médio               |  1 (1.7%)  |
-|          Sup. incompleto          |   0 (0%)   |
-|             Superior              |  1 (1.7%)  |
-|           __Tabagismo__           |  9 (16%)   |
-|           __Etilismo__            |  2 (3.4%)  |
-|         __Aposentadoria__         |            |
-|             Invalidez             |  41 (71%)  |
-|            Pensionista            |  1 (1.7%)  |
-|         Tempo De Serviço          |  10 (17%)  |
-|            Trabalhando            |  6 (10%)   |
-|        __Renda familiar__         |            |
-|             Até 1 SM              |  46 (79%)  |
-|             2 a 5 SM              |  10 (17%)  |
-|           Mais que 5 SM           |  2 (3.4%)  |
+|**Características dos pacientes** | **N = 58** |
+|:---------------------------------|:----------:|
+|__Idade__                         |  63 (11)   |
+|__Sexo__                          |            |
+|F                                 |  27 (47%)  |
+|M                                 |  31 (53%)  |
+|__Escolaridade__                  |            |
+|Não alfabetizado                  |   0 (0%)   |
+|Fund. incompleto                  |  45 (78%)  |
+|Fundamental                       |  11 (19%)  |
+|Méd. incompleto                   |   0 (0%)   |
+|Médio                             |  1 (1.7%)  |
+|Sup. incompleto                   |   0 (0%)   |
+|Superior                          |  1 (1.7%)  |
+|__Tabagismo__                     |  9 (16%)   |
+|__Etilismo__                      |  2 (3.4%)  |
+|__Aposentadoria__                 |            |
+|Invalidez                         |  41 (71%)  |
+|Pensionista                       |  1 (1.7%)  |
+|Tempo De Serviço                  |  10 (17%)  |
+|Trabalhando                       |  6 (10%)   |
+|__Renda familiar__                |            |
+|Até 1 SM                          |  46 (79%)  |
+|2 a 5 SM                          |  10 (17%)  |
+|Mais que 5 SM                     |  2 (3.4%)  |
 
 
 Table: **Tabela 2** Características clínicas relativas à ATQ
 
-|     **Características dos pacientes**     | **N = 58** |
-|:-----------------------------------------:|:----------:|
-|             __Motivo da ATQ__             |            |
-|                 Fraturas                  |  19 (33%)  |
-|                Coxartrose                 |  29 (50%)  |
-|               Osteonecrose                |  1 (1.7%)  |
-|                 Displasia                 |  2 (3.4%)  |
-|                  Outros                   |  7 (12%)   |
-|              __Deambulação__              |            |
-|                   Livre                   |  7 (12%)   |
-|                  Bengala                  |  40 (69%)  |
-|                  Andador                  |  6 (10%)   |
-|             Cadeira de rodas              |  5 (8.6%)  |
-|                   Leito                   |   0 (0%)   |
-|      __Revisões prévias de quadril__      |            |
-|                     0                     |  4 (10%)   |
-|                     1                     |  13 (33%)  |
-|                     2                     |  22 (56%)  |
-|               Desconhecido                |     19     |
-|      __Motivo de revisões prévias__       |            |
-|           Fratura Periprotética           |  1 (2.9%)  |
-|                 Infecção                  |  2 (5.7%)  |
-|       Soltura Asséptica Acetabular        |  23 (66%)  |
-|         Soltura Asséptica Femoral         |  2 (5.7%)  |
-|        Soltura Asséptica de Ambos         |  7 (20%)   |
-|               Desconhecido                |     23     |
-| __Ciurgia (não ortop.) durante a espera__ |  3 (5.2%)  |
+|**Características dos pacientes**         | **N = 58** |
+|:-----------------------------------------|:----------:|
+|__Motivo da ATQ__                         |            |
+|Fraturas                                  |  19 (33%)  |
+|Coxartrose                                |  29 (50%)  |
+|Osteonecrose                              |  1 (1.7%)  |
+|Displasia                                 |  2 (3.4%)  |
+|Outros                                    |  7 (12%)   |
+|__Deambulação__                           |            |
+|Livre                                     |  7 (12%)   |
+|Bengala                                   |  40 (69%)  |
+|Andador                                   |  6 (10%)   |
+|Cadeira de rodas                          |  5 (8.6%)  |
+|Leito                                     |   0 (0%)   |
+|__Revisões prévias de quadril__           |            |
+|0                                         |  4 (10%)   |
+|1                                         |  13 (33%)  |
+|2                                         |  22 (56%)  |
+|Desconhecido                              |     19     |
+|__Motivo de revisões prévias__            |            |
+|Fratura Periprotética                     |  1 (2.9%)  |
+|Infecção                                  |  2 (5.7%)  |
+|Soltura Asséptica Acetabular              |  23 (66%)  |
+|Soltura Asséptica Femoral                 |  2 (5.7%)  |
+|Soltura Asséptica de Ambos                |  7 (20%)   |
+|Desconhecido                              |     23     |
+|__Ciurgia (não ortop.) durante a espera__ |  3 (5.2%)  |
 
 ## Tempo de espera de revisão de ATQ
 
@@ -179,45 +179,45 @@ Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segu
 
 Table: **Tabela 3** Características clínicas durante a espera
 
-| **Características dos pacientes** | **N = 58**  |
-|:---------------------------------:|:-----------:|
-|    __Tempo de espera (anos)__     | 3.52 (3.21) |
-|       __Diagnóstico atual__       |             |
-|       Fratura Periprotética       |  1 (2.1%)   |
-|             Infecção              |  1 (2.1%)   |
-|   Soltura Asséptica Acetabular    |  34 (72%)   |
-|     Soltura Asséptica Femoral     |  1 (2.1%)   |
-|    Soltura Asséptica de Ambos     |  10 (21%)   |
-|           Desconhecido            |     11      |
-|      __Escore de Charlson__       |             |
-|                0%                 |  29 (51%)   |
-|              0% a 5%              |  14 (25%)   |
-|             5% a 10%              |   8 (14%)   |
-|           Maior que 10%           |   6 (11%)   |
-|           Desconhecido            |      1      |
-|              __HHS__              |   41 (15)   |
-|           Desconhecido            |      1      |
-|    __Classificação Paprosky__     |             |
-|                 1                 |   7 (13%)   |
-|                2A                 |   7 (13%)   |
-|                2B                 |   8 (15%)   |
-|                2C                 |  19 (35%)   |
-|                3A                 |  11 (20%)   |
-|                3B                 |  2 (3.7%)   |
-|                3C                 |   0 (0%)    |
-|           Desconhecido            |      4      |
-|    __Uso de antidepressivos__     |   8 (14%)   |
-|  __Número de medicações em uso__  |             |
-|                 0                 |  16 (28%)   |
-|                 1                 |  19 (33%)   |
-|                 2                 |  20 (34%)   |
-|                 3                 |  3 (5.2%)   |
-|      __Uso de analgésicos__       |             |
-|              Nenhum               |   9 (16%)   |
-|               AINES               |  18 (31%)   |
-|             Opióides              |   9 (16%)   |
-|            Analgésicos            |  2 (3.4%)   |
-|              Vários               |  20 (34%)   |
+|**Características dos pacientes** | **N = 58**  |
+|:---------------------------------|:-----------:|
+|__Tempo de espera (anos)__        | 3.52 (3.21) |
+|__Diagnóstico atual__             |             |
+|Fratura Periprotética             |  1 (2.1%)   |
+|Infecção                          |  1 (2.1%)   |
+|Soltura Asséptica Acetabular      |  34 (72%)   |
+|Soltura Asséptica Femoral         |  1 (2.1%)   |
+|Soltura Asséptica de Ambos        |  10 (21%)   |
+|Desconhecido                      |     11      |
+|__Escore de Charlson__            |             |
+|0%                                |  29 (51%)   |
+|0% a 5%                           |  14 (25%)   |
+|5% a 10%                          |   8 (14%)   |
+|Maior que 10%                     |   6 (11%)   |
+|Desconhecido                      |      1      |
+|__HHS__                           |   41 (15)   |
+|Desconhecido                      |      1      |
+|__Classificação Paprosky__        |             |
+|1                                 |   7 (13%)   |
+|2A                                |   7 (13%)   |
+|2B                                |   8 (15%)   |
+|2C                                |  19 (35%)   |
+|3A                                |  11 (20%)   |
+|3B                                |  2 (3.7%)   |
+|3C                                |   0 (0%)    |
+|Desconhecido                      |      4      |
+|__Uso de antidepressivos__        |   8 (14%)   |
+|__Número de medicações em uso__   |             |
+|0                                 |  16 (28%)   |
+|1                                 |  19 (33%)   |
+|2                                 |  20 (34%)   |
+|3                                 |  3 (5.2%)   |
+|__Uso de analgésicos__            |             |
+|Nenhum                            |   9 (16%)   |
+|AINES                             |  18 (31%)   |
+|Opióides                          |   9 (16%)   |
+|Analgésicos                       |  2 (3.4%)   |
+|Vários                            |  20 (34%)   |
 
 # Exceções e Observações
 

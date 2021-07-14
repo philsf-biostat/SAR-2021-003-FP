@@ -65,7 +65,7 @@ dados <- dados %>%
   # faixa de Charlson
   mutate(charlson_faixa = cut(charlson
                               , breaks = c(-1, 0, .05, .1, Inf)
-                              , labels = c("0%" ,"0% a 5%", "5% a 10%", "Maior que 10%"))
+                              , labels = c("0%" ,"1% a 5%", "6% a 10%", "Maior que 10%"))
          , .after = hhs) %>%
   # escores como porcentagem
   mutate(charlson = charlson*100, hhs = hhs*100) %>%

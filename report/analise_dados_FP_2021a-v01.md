@@ -223,8 +223,8 @@ AINES: anti-inflamatórios não esteroides.
 |Desconhecido                      |     11      |
 |__Escore de Charlson__            |             |
 |0%                                |  29 (51%)   |
-|0% a 5%                           |  14 (25%)   |
-|5% a 10%                          |   8 (14%)   |
+|1% a 5%                           |  14 (25%)   |
+|6% a 10%                          |   8 (14%)   |
 |Maior que 10%                     |   6 (11%)   |
 |Desconhecido                      |      1      |
 |__HHS__                           |   41 (15)   |

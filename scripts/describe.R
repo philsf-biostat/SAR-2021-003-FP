@@ -76,10 +76,10 @@ vars_dem <- c(
   "idade_num",
   "sexo",
   "escolaridade",
-  "renda",
-  "causa",
   "tabagismo",
-  "etilismo"
+  "etilismo",
+  "causa",
+  "renda"
 )
 
 vars_cir <- c(

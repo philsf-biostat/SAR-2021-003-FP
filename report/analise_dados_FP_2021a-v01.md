@@ -102,17 +102,17 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 |Médio              |1 (1.7%)   |
 |Sup. incompleto    |0 (0%)     |
 |Superior           |1 (1.7%)   |
-|Renda familiar     |           |
-|Até 1 SM           |46 (79%)   |
-|2 a 5 SM           |10 (17%)   |
-|Mais que 5 SM      |2 (3.4%)   |
+|Tabagismo          |9 (16%)    |
+|Etilismo           |2 (3.4%)   |
 |Aposentadoria      |           |
 |Invalidez          |41 (71%)   |
 |Pensionista        |1 (1.7%)   |
 |Tempo De Serviço   |10 (17%)   |
 |Trabalhando        |6 (10%)    |
-|Tabagismo          |9 (16%)    |
-|Etilismo           |2 (3.4%)   |
+|Renda familiar     |           |
+|Até 1 SM           |46 (79%)   |
+|2 a 5 SM           |10 (17%)   |
+|Mais que 5 SM      |2 (3.4%)   |
 
 Table: **Tabela 1** Características demográficas
 

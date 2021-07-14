@@ -40,6 +40,7 @@ dados %>%
 
 dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*12)
 dados %>% ggplot(aes(tempo_anos)) + geom_bar()
+dados %>% ggplot(aes(tempo_anos)) + geom_histogram(binwidth = 1)
 dados %>% ggplot(aes(idade_num)) + geom_histogram(binwidth = 10)
 dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = 10)
 

@@ -5,8 +5,8 @@ date: '**Data: ** 2021-07-14'
 output:
   html_document:
     fig_caption: yes
-    fig_height: 6
-    fig_width: 6
+    fig_height: 4
+    fig_width: 4
     keep_md: yes
     number_sections: yes
     toc: yes
@@ -15,8 +15,8 @@ output:
     toc: yes
   word_document:
     fig_caption: yes
-    fig_height: 6
-    fig_width: 6
+    fig_height: 4
+    fig_width: 4
     reference_docx: misc/style_SAR_pt.docx
     toc: yes
 subtitle: 'RELATÓRIO: analise_dados_FP_2021a-v01'
@@ -189,6 +189,10 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |Vários                       |20 (34%)    |
 
 Table: **Tabela 3** Características clínicas durante a espera
+
+![](../figures/dist_tempo.png)
+
+**Figura 1** Distribuição do tempo de espera para cirurgia de revisão
 
 ## Análise inferencial
 

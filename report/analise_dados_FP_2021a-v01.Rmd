@@ -208,6 +208,10 @@ com baixa escolaridade
 e de baixa renda.
 Ambos os sexos foram igualmente representados na amostra, tanto na avaliação global quanto comparando com as outras características demográficas.
 
+A distribuição do tempo de espera é bimodal, com valores extremos.
+Distinguem-se dois grupos de pacientes que aguardam a cirurgia há aprox. 2 anos e 6 anos.
+Dois pacientes aguardam há mais de 10 anos.
+
 # Referências
 
 # Apêndice

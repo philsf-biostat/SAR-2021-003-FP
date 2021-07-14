@@ -251,6 +251,12 @@ AINES: anti-inflamatórios não esteroides.
 |Opióides                          |   9 (16%)   |
 |Analgésicos                       |  2 (3.4%)   |
 
+As duas medidas de risco aos pacientes utilizadas neste estudo foram correlacionadas para investigar se há associação entre suas distribuções de frequências.
+O índice de Charlson, quando convertido para porcentagem, confere uma quantificação do risco de morte no próximo ano.
+Na amostra, as três classificações de Paprosky mais prevalentes foram 2B, 2C e 3A (Tabela 4).
+As ocorrências dessas três categorias parecem estar uniformemente distribuídas em relação às faixas consideradas para o escore de Charlson, sem associação detectável (p = 0.5).
+Não podemos, nesta amostra, afirmar que determinadas classificações de Paprosky estão associadas ao aumento do risco de morte no próximo ano conforme mensuradas pelo escore de Charlson.
+
 **Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
 p = teste exato de Fisher.
 

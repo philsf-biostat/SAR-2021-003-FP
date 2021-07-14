@@ -101,8 +101,11 @@ A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apont
 A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
 A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
 
+**Tabela 1** Características demográficas dos pacientes que aguardam revisão de ATQ.
+Total da amostra e estratificação por sexo.
+p = teste t ou teste exato de Fisher;
+SM = salário mínimo
 
-Table: **Tabela 1** Características demográficas
 
 |**Características dos pacientes** | **Total**, N = 58 |**M**, N = 31 | **F**, N = 27 |**valor p** |
 |:---------------------------------|:-----------------:|:-------------|:-------------:|:-----------|
@@ -127,8 +130,9 @@ Table: **Tabela 1** Características demográficas
 |2 a 5 SM                          |     10 (17%)      |3 (9.7%)      |    7 (26%)    |            |
 |Mais que 5 SM                     |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |            |
 
+**Tabela 2** Características clínicas basais, relativas à ATQ.
+Dados relativos a eventos anteriores à indicação da revisão em espera.
 
-Table: **Tabela 2** Características clínicas relativas à ATQ
 
 |**Características dos pacientes**         | **N = 58** |
 |:-----------------------------------------|:----------:|
@@ -187,8 +191,9 @@ Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segu
 
 ## Características clínicas dos pacientes durante a espera
 
+**Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
+AINES: anti-inflamatórios não esteroides.
 
-Table: **Tabela 3** Características clínicas durante a espera
 
 |**Características dos pacientes** | **N = 58**  |
 |:---------------------------------|:-----------:|

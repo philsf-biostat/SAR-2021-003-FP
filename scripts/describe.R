@@ -92,10 +92,10 @@ vars_cir <- c(
 vars_clin <- c(
   "tempo_anos",
   "diagnostico_atual",
-  "anti_depressivos",
   "charlson_faixa",
   "hhs",
   "paprosky",
+  "anti_depressivos",
   "medicacoes_em_uso",
   "uso_de_analgesicos"
 )

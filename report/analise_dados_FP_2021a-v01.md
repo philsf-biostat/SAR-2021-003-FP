@@ -151,7 +151,6 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |Soltura Asséptica Femoral    |1 (2.1%)    |
 |Soltura Asséptica de Ambos   |10 (21%)    |
 |Faltantes                    |11          |
-|Uso de antidepressivos       |8 (14%)     |
 |Escore de Charlson           |            |
 |0%                           |29 (51%)    |
 |0% a 5%                      |14 (25%)    |
@@ -169,6 +168,7 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |3B                           |2 (3.7%)    |
 |3C                           |0 (0%)      |
 |Faltantes                    |4           |
+|Uso de antidepressivos       |8 (14%)     |
 |Número de medicações em uso  |            |
 |0                            |16 (28%)    |
 |1                            |19 (33%)    |

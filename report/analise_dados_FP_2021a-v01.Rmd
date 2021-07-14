@@ -120,6 +120,19 @@ desc_clin %>% as_kable()
 
 Table: **Tabela 3** Características clínicas durante a espera
 
+```{r moda_1, include=FALSE}
+dados %>%
+  filter(tempo_anos == 2) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
+```{r moda_2, include=FALSE}
+dados %>%
+  filter(tempo_anos == 6) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
+
 ```{r t maior que 10, include=FALSE}
 dados %>%
   filter(tempo_anos > 10) %>%
@@ -135,6 +148,11 @@ dados %>%
 ```
 
 A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
+Há 10 pacientes que aguardam há 2 ou 3 anos, cujas idades entre 45 e 80 anos e nos quais o diagnóstico mais comum é Soltura Asséptica Acetabular (n = 6) seguido de Soltura Asséptica de Ambos (n = 3).
+Seus índices de Charlson são tipicamente baixos, HHS em torno de 44% e as classificações Paprosky mais frequentes são 2C e 3A.
+Os pacientes que aguardam há 5 ou 6 anos (n = 14) tem perfil semelhante, com idades entre 44 a 83 anos e diagnóstico típico Soltura Asséptica Acetabular.
+A maiorira possui índice de Charlson baixo (n = 7), mas 3 pacientes possuem Charlson entre 0% e 5%, e 4 pacientes possuem Charlson entre 5% e 10%.
+A classificação de Paprosky típica foi 2C (n=6) seguida das classificações 2A e 3A (n = 3, cada).
 
 Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
 Estes são em sua maioria homens, com idades entre 48 e 69 anos.

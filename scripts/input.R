@@ -139,6 +139,9 @@ dados <- dados %>%
     valor = "Valor (R$)",
   )
 
+dados <- dados %>%
+  mutate_if(is.factor, fct_infreq)
+
 # dados clean (backup) ----------------------------------------------------
 
 dados_clean <- dados

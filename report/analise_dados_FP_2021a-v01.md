@@ -104,28 +104,28 @@ A distribuição de sexos na amostra de estudo é uniforme, e as demais caracter
 
 Table: **Tabela 1** Características demográficas
 
-|**Características dos pacientes** | **Total**, N = 58 |**F**, N = 27 | **M**, N = 31 |**valor p** |
+|**Características dos pacientes** | **Total**, N = 58 |**M**, N = 31 | **F**, N = 27 |**valor p** |
 |:---------------------------------|:-----------------:|:-------------|:-------------:|:-----------|
-|__Idade__                         |      63 (11)      |62 (11)       |    64 (11)    |0.7         |
+|__Idade__                         |      63 (11)      |64 (11)       |    62 (11)    |0.7         |
 |__Escolaridade__                  |                   |              |               |0.4         |
+|Fund. incompleto                  |     45 (78%)      |26 (84%)      |   19 (70%)    |            |
+|Fundamental                       |     11 (19%)      |5 (16%)       |    6 (22%)    |            |
+|Médio                             |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
+|Superior                          |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
 |Não alfabetizado                  |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|Fund. incompleto                  |     45 (78%)      |19 (70%)      |   26 (84%)    |            |
-|Fundamental                       |     11 (19%)      |6 (22%)       |    5 (16%)    |            |
 |Méd. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|Médio                             |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
 |Sup. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|Superior                          |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
-|__Tabagismo__                     |      9 (16%)      |3 (11%)       |    6 (19%)    |0.5         |
-|__Etilismo__                      |     2 (3.4%)      |1 (3.7%)      |   1 (3.2%)    |>0.9        |
+|__Tabagismo__                     |      9 (16%)      |6 (19%)       |    3 (11%)    |0.5         |
+|__Etilismo__                      |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |>0.9        |
 |__Aposentadoria__                 |                   |              |               |0.3         |
-|Invalidez                         |     41 (71%)      |16 (59%)      |   25 (81%)    |            |
-|Pensionista                       |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
-|Tempo De Serviço                  |     10 (17%)      |6 (22%)       |    4 (13%)    |            |
-|Trabalhando                       |      6 (10%)      |4 (15%)       |   2 (6.5%)    |            |
+|Invalidez                         |     41 (71%)      |25 (81%)      |   16 (59%)    |            |
+|Tempo De Serviço                  |     10 (17%)      |4 (13%)       |    6 (22%)    |            |
+|Trabalhando                       |      6 (10%)      |2 (6.5%)      |    4 (15%)    |            |
+|Pensionista                       |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
 |__Renda familiar__                |                   |              |               |0.3         |
-|Até 1 SM                          |     46 (79%)      |19 (70%)      |   27 (87%)    |            |
-|2 a 5 SM                          |     10 (17%)      |7 (26%)       |   3 (9.7%)    |            |
-|Mais que 5 SM                     |     2 (3.4%)      |1 (3.7%)      |   1 (3.2%)    |            |
+|Até 1 SM                          |     46 (79%)      |27 (87%)      |   19 (70%)    |            |
+|2 a 5 SM                          |     10 (17%)      |3 (9.7%)      |    7 (26%)    |            |
+|Mais que 5 SM                     |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |            |
 
 
 Table: **Tabela 2** Características clínicas relativas à ATQ
@@ -133,14 +133,14 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |**Características dos pacientes**         | **N = 58** |
 |:-----------------------------------------|:----------:|
 |__Motivo da ATQ__                         |            |
-|Fraturas                                  |  19 (33%)  |
 |Coxartrose                                |  29 (50%)  |
-|Osteonecrose                              |  1 (1.7%)  |
-|Displasia                                 |  2 (3.4%)  |
+|Fraturas                                  |  19 (33%)  |
 |Outros                                    |  7 (12%)   |
+|Displasia                                 |  2 (3.4%)  |
+|Osteonecrose                              |  1 (1.7%)  |
 |__Deambulação__                           |            |
-|Livre                                     |  7 (12%)   |
 |Bengala                                   |  40 (69%)  |
+|Livre                                     |  7 (12%)   |
 |Andador                                   |  6 (10%)   |
 |Cadeira de rodas                          |  5 (8.6%)  |
 |Leito                                     |   0 (0%)   |
@@ -150,11 +150,11 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |2                                         |  22 (56%)  |
 |Desconhecido                              |     19     |
 |__Motivo de revisões prévias__            |            |
-|Fratura Periprotética                     |  1 (2.9%)  |
-|Infecção                                  |  2 (5.7%)  |
 |Soltura Asséptica Acetabular              |  23 (66%)  |
-|Soltura Asséptica Femoral                 |  2 (5.7%)  |
 |Soltura Asséptica de Ambos                |  7 (20%)   |
+|Infecção                                  |  2 (5.7%)  |
+|Soltura Asséptica Femoral                 |  2 (5.7%)  |
+|Fratura Periprotética                     |  1 (2.9%)  |
 |Desconhecido                              |     23     |
 |__Ciurgia (não ortop.) durante a espera__ |  3 (5.2%)  |
 
@@ -194,11 +194,11 @@ Table: **Tabela 3** Características clínicas durante a espera
 |:---------------------------------|:-----------:|
 |__Tempo de espera (anos)__        | 3.52 (3.21) |
 |__Diagnóstico atual__             |             |
+|Soltura Asséptica Acetabular      |  34 (72%)   |
+|Soltura Asséptica de Ambos        |  10 (21%)   |
 |Fratura Periprotética             |  1 (2.1%)   |
 |Infecção                          |  1 (2.1%)   |
-|Soltura Asséptica Acetabular      |  34 (72%)   |
 |Soltura Asséptica Femoral         |  1 (2.1%)   |
-|Soltura Asséptica de Ambos        |  10 (21%)   |
 |Desconhecido                      |     11      |
 |__Escore de Charlson__            |             |
 |0%                                |  29 (51%)   |
@@ -209,11 +209,11 @@ Table: **Tabela 3** Características clínicas durante a espera
 |__HHS__                           |   41 (15)   |
 |Desconhecido                      |      1      |
 |__Classificação Paprosky__        |             |
-|1                                 |   7 (13%)   |
-|2A                                |   7 (13%)   |
-|2B                                |   8 (15%)   |
 |2C                                |  19 (35%)   |
 |3A                                |  11 (20%)   |
+|2B                                |   8 (15%)   |
+|1                                 |   7 (13%)   |
+|2A                                |   7 (13%)   |
 |3B                                |  2 (3.7%)   |
 |3C                                |   0 (0%)    |
 |Desconhecido                      |      4      |
@@ -224,11 +224,11 @@ Table: **Tabela 3** Características clínicas durante a espera
 |2                                 |  20 (34%)   |
 |3                                 |  3 (5.2%)   |
 |__Uso de analgésicos__            |             |
-|Nenhum                            |   9 (16%)   |
+|Vários                            |  20 (34%)   |
 |AINES                             |  18 (31%)   |
+|Nenhum                            |   9 (16%)   |
 |Opióides                          |   9 (16%)   |
 |Analgésicos                       |  2 (3.4%)   |
-|Vários                            |  20 (34%)   |
 
 # Exceções e Observações
 

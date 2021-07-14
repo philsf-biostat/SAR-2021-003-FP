@@ -147,6 +147,35 @@ Table: **Tabela 1** Características demográficas
 
 Table: **Tabela 2** Características clínicas relativas à ATQ
 
+## Tempo de espera de revisão de ATQ
+
+
+
+
+
+
+
+
+A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
+Há 10 pacientes que aguardam há 2 ou 3 anos, cujas idades entre 45 e 80 anos e nos quais o diagnóstico mais comum é Soltura Asséptica Acetabular (n = 6) seguido de Soltura Asséptica de Ambos (n = 3).
+Seus índices de Charlson são tipicamente baixos, HHS em torno de 44% e as classificações Paprosky mais frequentes são 2C e 3A.
+Os pacientes que aguardam há 5 ou 6 anos (n = 14) tem perfil semelhante, com idades entre 44 a 83 anos e diagnóstico típico Soltura Asséptica Acetabular.
+A maiorira possui índice de Charlson baixo (n = 7), mas 3 pacientes possuem Charlson entre 0% e 5%, e 4 pacientes possuem Charlson entre 5% e 10%.
+A classificação de Paprosky típica foi 2C (n=6) seguida das classificações 2A e 3A (n = 3, cada).
+
+![](../figures/dist_tempo.png)
+
+**Figura 1** Distribuição do tempo de espera para cirurgia de revisão
+
+Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
+Estes são em sua maioria homens, com idades entre 48 e 69 anos.
+O diagnóstico atual mais prevalente é Soltura Asséptica Acetabular, índice de Charlson baixo, HHS em torno de 40% e classificações de Paprosky 1, 2B e 2C.
+
+No extremo superior se observou dois pacientes aguardando a revisão há mais de 10 anos -- um homem de 84 anos aguarda há 15 anos e uma mulher de 50 anos aguarda há 17 anos.
+Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segunda é Soltura Asséptica Acetabular e ela possui o índice de Charlson 3.4%, HHS 10% e classificação Paprosky 2C.
+
+## Características clínicas dos pacientes durante a espera
+
 
 |**Characteristic**           |**N = 58**  |
 |:----------------------------|:-----------|
@@ -189,35 +218,6 @@ Table: **Tabela 2** Características clínicas relativas à ATQ
 |Vários                       |20 (34%)    |
 
 Table: **Tabela 3** Características clínicas durante a espera
-
-## Tempo de espera de revisão de ATQ
-
-
-
-
-
-
-
-
-A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
-Há 10 pacientes que aguardam há 2 ou 3 anos, cujas idades entre 45 e 80 anos e nos quais o diagnóstico mais comum é Soltura Asséptica Acetabular (n = 6) seguido de Soltura Asséptica de Ambos (n = 3).
-Seus índices de Charlson são tipicamente baixos, HHS em torno de 44% e as classificações Paprosky mais frequentes são 2C e 3A.
-Os pacientes que aguardam há 5 ou 6 anos (n = 14) tem perfil semelhante, com idades entre 44 a 83 anos e diagnóstico típico Soltura Asséptica Acetabular.
-A maiorira possui índice de Charlson baixo (n = 7), mas 3 pacientes possuem Charlson entre 0% e 5%, e 4 pacientes possuem Charlson entre 5% e 10%.
-A classificação de Paprosky típica foi 2C (n=6) seguida das classificações 2A e 3A (n = 3, cada).
-
-Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
-Estes são em sua maioria homens, com idades entre 48 e 69 anos.
-O diagnóstico atual mais prevalente é Soltura Asséptica Acetabular, índice de Charlson baixo, HHS em torno de 40% e classificações de Paprosky 1, 2B e 2C.
-
-No extremo superior se observou dois pacientes aguardando a revisão há mais de 10 anos -- um homem de 84 anos aguarda há 15 anos e uma mulher de 50 anos aguarda há 17 anos.
-Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segunda é Soltura Asséptica Acetabular e ela possui o índice de Charlson 3.4%, HHS 10% e classificação Paprosky 2C.
-
-![](../figures/dist_tempo.png)
-
-**Figura 1** Distribuição do tempo de espera para cirurgia de revisão
-
-## Características clínicas dos pacientes durante a espera
 
 # Exceções e Observações
 

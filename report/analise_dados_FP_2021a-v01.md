@@ -130,6 +130,22 @@ SM = salário mínimo
 |2 a 5 SM                          |     10 (17%)      |3 (9.7%)      |    7 (26%)    |            |
 |Mais que 5 SM                     |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |            |
 
+
+
+A tabela 2 mostra as características clínicas basais dos pacientes.
+As ATQs foram realizadas para resolver principalmente coxartroses ou fraturas.
+Dos 58 pacientes investigados 29 (50%) tinham coxartrose e 19 (33%) tinham fratura.
+A deambulação foi por bengala em 40 (69%) pessoas.
+
+Mais de 80% dos pacientes atualmente na fila já realizaram pelo menos uma revisão de quadril.
+22 (56%) pessoas já tendo realizado duas revisões e 13 (33%) pessoas com uma única revisão.
+O motivo mais prevalente das revisões prévias foi a Soltura Asséptica Acetabular que ocorreu em 23 (66%) pacientes (Tabela 2).
+
+A descrição geral das características clínicas basais do paciente que aguarda cirurgia de revisão de ATQ é de pacientes que
+já realizaram pelo menos uma revisão por Soltura Asséptica Acetabular da ATQ,
+que originalmente foi realizada por coxartrose ou fratura.
+Sua deambulação frequentemente foi feita com uso de bengala ou livre.
+
 **Tabela 2** Características clínicas basais, relativas à ATQ.
 Dados relativos a eventos anteriores à indicação da revisão em espera.
 
@@ -244,6 +260,11 @@ idosos aposentados por invalidez,
 com baixa escolaridade
 e de baixa renda.
 Ambos os sexos foram igualmente representados na amostra, tanto na avaliação global quanto comparando com as outras características demográficas.
+
+O paciente típico na fila de espera já realizou uma ou mais revisões da ATQ
+que originalmente foi realizada por coxartrose ou fratura.
+A causa mais frequentemente identificada para revisões foi a Soltura Asséptica Acetabular da ATQ, e
+sua deambulação foi feita com uso de bengala ou livre.
 
 A distribuição do tempo de espera é bimodal, com valores extremos.
 Distinguem-se dois grupos de pacientes que aguardam a cirurgia há aprox. 2 anos e 6 anos.

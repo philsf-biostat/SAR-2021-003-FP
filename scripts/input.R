@@ -89,7 +89,8 @@ dados <- dados %>%
     motivo = factor(motivo, levels = 1:5, labels = lab_diag),
     diagnostico_atual = factor(diagnostico_atual, levels = 1:5, labels = lab_diag),
     paprosky = factor(paprosky, levels = 1:7, labels = c("1", "2A", "2B", "2C", "3A", "3B", "3C")),
-  )
+  ) %>%
+  mutate(paprosky3 = fct_lump_n(paprosky, n = 3, other_level = "Outras"))
 
 # reshape de habitos_de_vida -> tabagismo e etilismo
 # reshape: valores = 1 | fill NA com 0
@@ -136,6 +137,7 @@ dados <- dados %>%
     motivo = "Motivo de revisões prévias",
     diagnostico_atual = "Diagnóstico atual",
     paprosky = "Classificação Paprosky",
+    paprosky3 = "Classificação Paprosky",
     valor = "Valor (R$)",
   )
 

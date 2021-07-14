@@ -251,6 +251,20 @@ AINES: anti-inflamatórios não esteroides.
 |Opióides                          |   9 (16%)   |
 |Analgésicos                       |  2 (3.4%)   |
 
+**Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
+p = teste exato de Fisher.
+
+
+|  **Características**   | 2B | 2C | 3A | Outras | **Total** | **valor p** |
+|:----------------------:|:--:|:--:|:--:|:------:|:---------:|:-----------:|
+| __Escore de Charlson__ |    |    |    |        |           |     0.5     |
+|           0%           | 5  | 10 | 5  |   6    |    26     |             |
+|        1% a 5%         | 2  | 6  | 2  |   4    |    14     |             |
+|        6% a 10%        | 0  | 2  | 1  |   5    |     8     |             |
+|     Maior que 10%      | 1  | 1  | 3  |   1    |     6     |             |
+|       __Total__        | 8  | 19 | 11 |   16   |    54     |             |
+
+
 # Exceções e Observações
 
 # Conclusões

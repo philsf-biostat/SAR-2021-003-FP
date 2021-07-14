@@ -221,6 +221,14 @@ AINES: anti-inflamatórios não esteroides.
 desc_clin %>% as_kable(align = "lc")
 ```
 
+**Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
+p = teste exato de Fisher.
+
+```{r inf_charlson_pap3}
+inf_charlson_pap3 %>% as_kable(align = "c")
+```
+
+
 # Exceções e Observações
 
 # Conclusões

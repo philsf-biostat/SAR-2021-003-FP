@@ -108,14 +108,18 @@ theme_gtsummary_mean_sd() # media/DP
 
 desc_dem <- dados %>%
   select(all_of(vars_dem)) %>%
-  tbl_summary() %>%
+  tbl_summary(by = sexo) %>%
+  # modify_caption(caption = "**Tabela 1** Características demográficas") %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
   bold_labels() %>%
+  add_overall() %>%
+  add_p() %>%
   modify_table_styling(columns = "label", align = "c") 
 
 desc_cir <- dados %>%
   select(all_of(vars_cir)) %>%
   tbl_summary() %>%
+  # modify_caption(caption = "**Tabela 2** Características clínicas relativas à ATQ") %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
   bold_labels() %>%
   modify_table_styling(columns = "label", align = "c")
@@ -123,6 +127,7 @@ desc_cir <- dados %>%
 desc_clin <- dados %>%
   select(all_of(vars_clin)) %>%
   tbl_summary() %>%
+  # modify_caption(caption = "**Tabela 3** Características clínicas durante a espera") %>%
   modify_header(label ~ "**Características dos pacientes**") %>%
   bold_labels() %>%
   modify_table_styling(columns = "label", align = "c")

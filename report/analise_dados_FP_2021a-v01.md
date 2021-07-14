@@ -104,31 +104,28 @@ A distribuição de sexos na amostra de estudo é uniforme, e as demais caracter
 
 Table: **Tabela 1** Características demográficas
 
-|**Características dos pacientes** | **N = 58** |
-|:---------------------------------|:----------:|
-|__Idade__                         |  63 (11)   |
-|__Sexo__                          |            |
-|F                                 |  27 (47%)  |
-|M                                 |  31 (53%)  |
-|__Escolaridade__                  |            |
-|Não alfabetizado                  |   0 (0%)   |
-|Fund. incompleto                  |  45 (78%)  |
-|Fundamental                       |  11 (19%)  |
-|Méd. incompleto                   |   0 (0%)   |
-|Médio                             |  1 (1.7%)  |
-|Sup. incompleto                   |   0 (0%)   |
-|Superior                          |  1 (1.7%)  |
-|__Tabagismo__                     |  9 (16%)   |
-|__Etilismo__                      |  2 (3.4%)  |
-|__Aposentadoria__                 |            |
-|Invalidez                         |  41 (71%)  |
-|Pensionista                       |  1 (1.7%)  |
-|Tempo De Serviço                  |  10 (17%)  |
-|Trabalhando                       |  6 (10%)   |
-|__Renda familiar__                |            |
-|Até 1 SM                          |  46 (79%)  |
-|2 a 5 SM                          |  10 (17%)  |
-|Mais que 5 SM                     |  2 (3.4%)  |
+|**Características dos pacientes** | **Total**, N = 58 |**F**, N = 27 | **M**, N = 31 |**valor p** |
+|:---------------------------------|:-----------------:|:-------------|:-------------:|:-----------|
+|__Idade__                         |      63 (11)      |62 (11)       |    64 (11)    |0.7         |
+|__Escolaridade__                  |                   |              |               |0.4         |
+|Não alfabetizado                  |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
+|Fund. incompleto                  |     45 (78%)      |19 (70%)      |   26 (84%)    |            |
+|Fundamental                       |     11 (19%)      |6 (22%)       |    5 (16%)    |            |
+|Méd. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
+|Médio                             |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
+|Sup. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
+|Superior                          |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
+|__Tabagismo__                     |      9 (16%)      |3 (11%)       |    6 (19%)    |0.5         |
+|__Etilismo__                      |     2 (3.4%)      |1 (3.7%)      |   1 (3.2%)    |>0.9        |
+|__Aposentadoria__                 |                   |              |               |0.3         |
+|Invalidez                         |     41 (71%)      |16 (59%)      |   25 (81%)    |            |
+|Pensionista                       |     1 (1.7%)      |1 (3.7%)      |    0 (0%)     |            |
+|Tempo De Serviço                  |     10 (17%)      |6 (22%)       |    4 (13%)    |            |
+|Trabalhando                       |      6 (10%)      |4 (15%)       |   2 (6.5%)    |            |
+|__Renda familiar__                |                   |              |               |0.3         |
+|Até 1 SM                          |     46 (79%)      |19 (70%)      |   27 (87%)    |            |
+|2 a 5 SM                          |     10 (17%)      |7 (26%)       |   3 (9.7%)    |            |
+|Mais que 5 SM                     |     2 (3.4%)      |1 (3.7%)      |   1 (3.2%)    |            |
 
 
 Table: **Tabela 2** Características clínicas relativas à ATQ

@@ -120,6 +120,29 @@ desc_clin %>% as_kable()
 
 Table: **Tabela 3** Características clínicas durante a espera
 
+```{r t maior que 10, include=FALSE}
+dados %>%
+  filter(tempo_anos > 10) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
+
+```{r t menor que 1, include=FALSE}
+dados %>%
+  filter(tempo_anos == 0) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky)
+
+```
+
+A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
+
+Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
+Estes são em sua maioria homens, com idades entre 48 e 69 anos.
+O diagnóstico atual mais prevalente é Soltura Asséptica Acetabular, índice de Charlson baixo, HHS em torno de 40% e classificações de Paprosky 1, 2B e 2C.
+
+No extremo superior se observou dois pacientes aguardando a revisão há mais de 10 anos -- um homem de 84 anos aguarda há 15 anos e uma mulher de 50 anos aguarda há 17 anos.
+Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segunda é Soltura Asséptica Acetabular e ela possui o índice de Charlson 3.4%, HHS 10% e classificação Paprosky 2C.
+
 ![](../figures/dist_tempo.png)
 
 **Figura 1** Distribuição do tempo de espera para cirurgia de revisão

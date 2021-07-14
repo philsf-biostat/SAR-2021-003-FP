@@ -87,6 +87,11 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 ## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
+Foram coletadas respostas de 58 pacientes que aguardam cirurgia de revisão de ATQ (Tabela 1).
+A idade média (DP) é 63 anos (11 anos).
+A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres.
+A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idoso (idade média 62 anos), com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
+
 
 Table: **Tabela 1** Características demográficas
 

@@ -12,8 +12,8 @@ Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em San
 ## Análises realizadas
 
 1. Análise descritiva
-1. Análise inferencial
-1. Modelagem estatística
+<!-- 1. Análise inferencial -->
+<!-- 1. Modelagem estatística -->
 <!-- 1. Análise de poder -->
 
 ## Documentos

@@ -1,7 +1,7 @@
 ---
 title: "Plano de Análise Estatística de Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: '**Data: ** dd/mm/aaaa'
+author: '**De:** Felipe Figueiredo **Para:** Fernando Pina'
+date: '**Data: ** 2021-07-14'
 output:
   html_document:
     fig_caption: yes

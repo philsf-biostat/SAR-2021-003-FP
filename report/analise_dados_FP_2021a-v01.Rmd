@@ -83,7 +83,7 @@ kable(history)
 # Metodologia
 
 ```{r results, include=FALSE}
-# source("scripts/results.R", encoding = 'UTF-8')
+source("scripts/results.R", encoding = 'UTF-8')
 ```
 
 ## Variáveis
@@ -101,6 +101,10 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 # Resultados
 
 ## Análise descritiva
+
+```{r}
+desc %>% as_kable()
+```
 
 ## Análise inferencial
 

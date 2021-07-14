@@ -72,6 +72,6 @@ dados %>% ggplot(aes(anti_depressivos, tempo_de_espera)) + geom_jitter(alpha = .
 
 # tables ------------------------------------------------------------------
 
-dados %>%
+desc <- dados %>%
   select(-c(aposentado, charlson, ano_atq, tempo_anos, valor, id, motivo_outro)) %>%
   gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()

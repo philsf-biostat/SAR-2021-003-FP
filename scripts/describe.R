@@ -40,6 +40,7 @@ dados %>%
 
 dados %>% ggplot(aes(tempo_de_espera)) + geom_histogram(breaks = seq(0, 20, 5)*12)
 dados %>% ggplot(aes(tempo_anos)) + geom_bar()
+dados %>% ggplot(aes(tempo_anos)) + geom_histogram(binwidth = 1)
 dados %>% ggplot(aes(idade_num)) + geom_histogram(binwidth = 10)
 dados %>% ggplot(aes(hhs)) + geom_histogram(binwidth = 10)
 
@@ -72,6 +73,61 @@ dados %>% ggplot(aes(anti_depressivos, tempo_de_espera)) + geom_jitter(alpha = .
 
 # tables ------------------------------------------------------------------
 
-dados %>%
-  select(-c(aposentado, charlson, ano_atq, tempo_anos, valor, id, motivo_outro)) %>%
-  gtsummary::tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})"), missing_text = "Faltantes") #%>% gtsummary::as_kable_extra()
+vars_dem <- c(
+  "idade_num",
+  "sexo",
+  "escolaridade",
+  "tabagismo",
+  "etilismo",
+  "causa",
+  "renda"
+)
+
+vars_cir <- c(
+  "motivo_da_atq",
+  "deambulacao",
+  "revisoes",
+  "motivo",
+  "cirurgia_durante_a_espera"
+)
+
+vars_clin <- c(
+  "tempo_anos",
+  "diagnostico_atual",
+  "charlson_faixa",
+  "hhs",
+  "paprosky",
+  "anti_depressivos",
+  "medicacoes_em_uso",
+  "uso_de_analgesicos"
+)
+
+# configurar tema gtsummary
+theme_gtsummary_language(language = "pt") # traduzir
+theme_gtsummary_mean_sd() # media/DP
+
+desc_dem <- dados %>%
+  select(all_of(vars_dem)) %>%
+  tbl_summary(by = sexo) %>%
+  # modify_caption(caption = "**Tabela 1** Características demográficas") %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels() %>%
+  add_overall() %>%
+  add_p() %>%
+  modify_table_styling(columns = "label", align = "c") 
+
+desc_cir <- dados %>%
+  select(all_of(vars_cir)) %>%
+  tbl_summary() %>%
+  # modify_caption(caption = "**Tabela 2** Características clínicas relativas à ATQ") %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels() %>%
+  modify_table_styling(columns = "label", align = "c")
+
+desc_clin <- dados %>%
+  select(all_of(vars_clin)) %>%
+  tbl_summary() %>%
+  # modify_caption(caption = "**Tabela 3** Características clínicas durante a espera") %>%
+  modify_header(label ~ "**Características dos pacientes**") %>%
+  bold_labels() %>%
+  modify_table_styling(columns = "label", align = "c")

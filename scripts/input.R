@@ -65,7 +65,7 @@ dados <- dados %>%
   # faixa de Charlson
   mutate(charlson_faixa = cut(charlson
                               , breaks = c(-1, 0, .05, .1, Inf)
-                              , labels = c("0%" ,"0% a 5%", "5% a 10%", "Maior que 10%"))
+                              , labels = c("0%" ,"1% a 5%", "6% a 10%", "Maior que 10%"))
          , .after = hhs) %>%
   # escores como porcentagem
   mutate(charlson = charlson*100, hhs = hhs*100) %>%
@@ -75,8 +75,8 @@ dados <- dados %>%
   mutate(
     id = factor(id),
     sexo = factor(sexo),
-    aposentado = factor(aposentado),
-    cirurgia_durante_a_espera = factor(cirurgia_durante_a_espera),
+    aposentado = as.numeric(aposentado == "Sim"),
+    cirurgia_durante_a_espera = as.numeric(cirurgia_durante_a_espera == "Sim"),
     renda = factor(renda, labels = c("Até 1 SM", "2 a 5 SM", "Mais que 5 SM")),
     causa = factor(causa),
     escolaridade = factor(escolaridade, levels = 1:7, labels = lab_escol),
@@ -84,12 +84,13 @@ dados <- dados %>%
     deambulacao = factor(deambulacao, levels = 1:5, labels = c("Livre", "Bengala", "Andador", "Cadeira de rodas", "Leito")),
     # medicacoes_em_uso = factor(medicacoes_em_uso),
     uso_de_analgesicos = factor(uso_de_analgesicos, labels = c("Nenhum", "AINES", "Opióides", "Analgésicos", "Vários")),
-    anti_depressivos = factor(anti_depressivos),
+    anti_depressivos = as.numeric(anti_depressivos == "Sim"),
     # ano_atq = factor(ano_atq),
     motivo = factor(motivo, levels = 1:5, labels = lab_diag),
     diagnostico_atual = factor(diagnostico_atual, levels = 1:5, labels = lab_diag),
     paprosky = factor(paprosky, levels = 1:7, labels = c("1", "2A", "2B", "2C", "3A", "3B", "3C")),
-  )
+  ) %>%
+  mutate(paprosky3 = fct_lump_n(paprosky, n = 3, other_level = "Outras"))
 
 # reshape de habitos_de_vida -> tabagismo e etilismo
 # reshape: valores = 1 | fill NA com 0
@@ -136,8 +137,12 @@ dados <- dados %>%
     motivo = "Motivo de revisões prévias",
     diagnostico_atual = "Diagnóstico atual",
     paprosky = "Classificação Paprosky",
+    paprosky3 = "Classificação Paprosky",
     valor = "Valor (R$)",
   )
+
+dados <- dados %>%
+  mutate_if(is.factor, fct_infreq)
 
 # dados clean (backup) ----------------------------------------------------
 

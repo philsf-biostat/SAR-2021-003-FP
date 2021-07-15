@@ -187,6 +187,7 @@ Dados relativos a eventos anteriores à indicação da revisão em espera.
 
 
 
+O tempo de espera médio é de 3.5 anos (Tabela 3).
 A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
 Há 10 pacientes que aguardam há 2 ou 3 anos, cujas idades entre 45 e 80 anos e nos quais o diagnóstico mais comum é Soltura Asséptica Acetabular (n = 6) seguido de Soltura Asséptica de Ambos (n = 3).
 Seus índices de Charlson são tipicamente baixos, HHS em torno de 44% e as classificações Paprosky mais frequentes são 2C e 3A.
@@ -206,6 +207,17 @@ No extremo superior se observou dois pacientes aguardando a revisão há mais de
 Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segunda é Soltura Asséptica Acetabular e ela possui o índice de Charlson 3.4%, HHS 10% e classificação Paprosky 2C.
 
 ## Características clínicas dos pacientes durante a espera
+
+
+
+As características clinicas dos pacientes avaliados no questionário são apresentadas na Tabela 3.
+O diagnóstico atual mais prevalente é a Soltura Asséptica Acetabular, seguida da Soltura Asséptica de Ambos.
+O escore de Charlson médio na amostra é 3%, onde 29 (51%) pessoas possuem escore de 0%.
+Considerando apenas as pessoas que possuem risco positivo de morrer no próximo ano o escore médio é 6%.
+A classificação de Paprosky mais prevalente é 2C com 19 (35%) pessoas, seguida de 3A com 11 (20%) pessoas.
+Os pacientes atualmente na fila de espera fazem uso de diversos tipos de analgésicos, sendo AINES a classe individual de analésico mais usada.
+A maior parte dos pacientes investigados (34%) usam uma combinação de classes de analgésicos.
+Uma pequena parte da amostra (14%) faz uso de antidepressivos.
 
 **Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
 AINES: anti-inflamatórios não esteroides.

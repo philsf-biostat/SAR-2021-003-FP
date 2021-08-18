@@ -40,12 +40,12 @@ Análise de Dados projeto Fernando Pina (2021)
 
 <!-- --- -->
 
-**Versão 01** - [Em elaboração][v01-project].
-<!-- **Versão 01** -- [Concluída][v01-project]. -->
+<!-- **Versão 01** - [Em elaboração][v01-project]. -->
+**Versão 01** -- [Concluída][v01-project].
 
 - [Visualização online][reportviz-v01]
-- Download
-<!-- - [Download][pdf-v01] -->
+- [Download][pdf-v01]
+<!-- - Download -->
 
 
 [releases]: https://github.com/philsf-biostat/analise_dados_FP_2021a/releases/

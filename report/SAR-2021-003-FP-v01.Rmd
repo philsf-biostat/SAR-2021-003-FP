@@ -1,7 +1,8 @@
 ---
 title: "Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
+subtitle: 'DOCUMENTO: SAR-2021-003-FP-v01'
 author: '**De:** Felipe Figueiredo **Para:** Fernando Pina'
-date: '**Data: ** 2021-07-14'
+date: '**Data:** 2021-07-14'
 output:
   html_document:
     fig_caption: yes
@@ -17,22 +18,34 @@ output:
     fig_caption: yes
     fig_height: 4
     fig_width: 4
-    reference_docx: misc/style_SAR_pt.docx
+    reference_docx: misc/style_SAR_pt-ub.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_FP_2021a-v01'
 toc-title: "Sumário"
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+options(scipen = 999)
+library(pander)
+library(knitr)
+library(philsfmisc)
+panderOptions('table.style', 'rmarkdown')
+panderOptions('table.split.table', Inf)
+```
 
 ---
 
 **Histórico do documento**
 
-
-|Versão |Alterações     |
-|:------|:--------------|
-|01     |Versão inicial |
+```{r, echo = FALSE}
+Version <- c("01")
+Changes <- c("Versão inicial")
+history <- cbind(Version, Changes)
+colnames(history) <- c("Versão", "Alterações")
+# pander(history, split.cells = 70)
+kable(history)
+```
 
 ---
 
@@ -61,6 +74,11 @@ toc-title: "Sumário"
 
 # Lista de abreviaturas
 
+- AINES: anti-inflamatórios não esteroides
+- ATQ: Artroplastia Total de Quadril
+- HHS: Harris Hip Score
+- SM: Salário Mínimo
+
 # Introdução
 
 ## Objetivos
@@ -69,7 +87,9 @@ toc-title: "Sumário"
 
 # Metodologia
 
-
+```{r results, include=FALSE}
+source("scripts/results.R", encoding = 'UTF-8')
+```
 
 ## Variáveis
 
@@ -81,22 +101,32 @@ toc-title: "Sumário"
 
 ### Softwares utilizados
 
-Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
+Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
 # Resultados
 
 ## Perfil epidemiológico dos pacientes em fila de espera de revisão de ATQ
 
-
+```{r desc_indiv}
+dem.idade <- inline_text(desc_dem, variable = idade_num, column = "stat_0")
+dem.fund.inc <- inline_text(desc_dem, variable = escolaridade, level = "Fund. incompleto", column = "stat_0")
+dem.fund.com <- inline_text(desc_dem, variable = escolaridade, level = "Fundamental", column = "stat_0")
+dem.etilismo <- inline_text(desc_dem, variable = etilismo, column = "stat_0")
+dem.tabagismo <- inline_text(desc_dem, variable = tabagismo, column = "stat_0")
+dem.renda.ate1 <- inline_text(desc_dem, variable = renda, column = "stat_0", level = "Até 1 SM")
+dem.renda.2a5 <- inline_text(desc_dem, variable = renda, column = "stat_0", level = "2 a 5 SM")
+dem.trab <- inline_text(desc_dem, variable = causa, column = "stat_0", level = "Trabalhando")
+dem.apos.inv <- inline_text(desc_dem, variable = causa, column = "stat_0", level = "Invalidez")
+```
 
 Foram coletadas respostas de 58 pacientes que aguardam cirurgia de revisão de ATQ (Tabela 1).
-A idade média (DP) é 63 (11) anos.
+A idade média (DP) é `r dem.idade` anos.
 Os níveis de escolaridade mais frequentemente observados foram relativamente baixos com
-45 (78%) pessoas possuindo Fundamental incompleto e
-11 (19%) pessoas no nível Fundamental completo.
-Os hábitos de vida comumente associados a comorbidades não foram prevalentes nesta amostra, onde apenas 9 (16%) são fumantes e 2 (3.4%) fazem uso frequente de álcool.
-A amostra parece ser composta predominantemente por pessoas de baixa renda, pois 46 (79%) possuem renda de até 1 salário mínimo, seguida de 10 (17%) pessoas recebem de 2 a 5 salários mínimos.
-A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apontada em 41 (71%); apenas 6 (10%) pessoas permaneciam em atividade laboral no momento da apresentação do questionário.
+`r dem.fund.inc` pessoas possuindo Fundamental incompleto e
+`r dem.fund.com` pessoas no nível Fundamental completo.
+Os hábitos de vida comumente associados a comorbidades não foram prevalentes nesta amostra, onde apenas `r dem.tabagismo` são fumantes e `r dem.etilismo` fazem uso frequente de álcool.
+A amostra parece ser composta predominantemente por pessoas de baixa renda, pois `r dem.renda.ate1` possuem renda de até 1 salário mínimo, seguida de `r dem.renda.2a5` pessoas recebem de 2 a 5 salários mínimos.
+A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apontada em `r dem.apos.inv`; apenas `r dem.trab` pessoas permaneciam em atividade laboral no momento da apresentação do questionário.
 
 A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
 A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
@@ -106,40 +136,27 @@ Total da amostra e estratificação por sexo.
 p = teste t ou teste exato de Fisher;
 SM = salário mínimo
 
+```{r desc_dem}
+desc_dem %>% as_kable(align = "lc")
+```
 
-|**Características dos pacientes** | **Total**, N = 58 |**M**, N = 31 | **F**, N = 27 |**valor p** |
-|:---------------------------------|:-----------------:|:-------------|:-------------:|:-----------|
-|__Idade__                         |      63 (11)      |64 (11)       |    62 (11)    |0.7         |
-|__Escolaridade__                  |                   |              |               |0.4         |
-|Fund. incompleto                  |     45 (78%)      |26 (84%)      |   19 (70%)    |            |
-|Fundamental                       |     11 (19%)      |5 (16%)       |    6 (22%)    |            |
-|Médio                             |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
-|Superior                          |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
-|Não alfabetizado                  |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|Méd. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|Sup. incompleto                   |      0 (0%)       |0 (0%)        |    0 (0%)     |            |
-|__Tabagismo__                     |      9 (16%)      |6 (19%)       |    3 (11%)    |0.5         |
-|__Etilismo__                      |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |>0.9        |
-|__Aposentadoria__                 |                   |              |               |0.3         |
-|Invalidez                         |     41 (71%)      |25 (81%)      |   16 (59%)    |            |
-|Tempo De Serviço                  |     10 (17%)      |4 (13%)       |    6 (22%)    |            |
-|Trabalhando                       |      6 (10%)      |2 (6.5%)      |    4 (15%)    |            |
-|Pensionista                       |     1 (1.7%)      |0 (0%)        |   1 (3.7%)    |            |
-|__Renda familiar__                |                   |              |               |0.3         |
-|Até 1 SM                          |     46 (79%)      |27 (87%)      |   19 (70%)    |            |
-|2 a 5 SM                          |     10 (17%)      |3 (9.7%)      |    7 (26%)    |            |
-|Mais que 5 SM                     |     2 (3.4%)      |1 (3.2%)      |   1 (3.7%)    |            |
-
-
+```{r}
+cir.motivo.cox <- inline_text(desc_cir, variable = motivo_da_atq, level = "Coxartrose")
+cir.motivo.frat <- inline_text(desc_cir, variable = motivo_da_atq, level = "Fraturas")
+cir.deam.b <- inline_text(desc_cir, variable = deambulacao, level = "Bengala")
+cir.rev.1 <- inline_text(desc_cir, variable = revisoes, level = "1")
+cir.rev.2 <- inline_text(desc_cir, variable = revisoes, level = "2")
+cir.motivo.rev <- inline_text(desc_cir, variable = motivo, level = "Soltura Asséptica Acetabular")
+```
 
 A tabela 2 mostra as características clínicas basais dos pacientes.
 As ATQs foram realizadas para resolver principalmente coxartroses ou fraturas.
-Dos 58 pacientes investigados 29 (50%) tinham coxartrose e 19 (33%) tinham fratura.
-A deambulação foi por bengala em 40 (69%) pessoas.
+Dos 58 pacientes investigados `r cir.motivo.cox` tinham coxartrose e `r cir.motivo.frat` tinham fratura.
+A deambulação foi por bengala em `r cir.deam.b` pessoas.
 
 Mais de 80% dos pacientes atualmente na fila já realizaram pelo menos uma revisão de quadril.
-22 (56%) pessoas já tendo realizado duas revisões e 13 (33%) pessoas com uma única revisão.
-O motivo mais prevalente das revisões prévias foi a Soltura Asséptica Acetabular que ocorreu em 23 (66%) pacientes (Tabela 2).
+`r cir.rev.2` pessoas já tendo realizado duas revisões e `r cir.rev.1` pessoas com uma única revisão.
+O motivo mais prevalente das revisões prévias foi a Soltura Asséptica Acetabular que ocorreu em `r cir.motivo.rev` pacientes (Tabela 2).
 
 A descrição geral das características clínicas basais do paciente que aguarda cirurgia de revisão de ATQ é de pacientes que
 já realizaram pelo menos uma revisão por Soltura Asséptica Acetabular da ATQ,
@@ -149,43 +166,38 @@ Sua deambulação frequentemente foi feita com uso de bengala ou livre.
 **Tabela 2** Características clínicas basais, relativas à ATQ.
 Dados relativos a eventos anteriores à indicação da revisão em espera.
 
-
-|**Características dos pacientes**         | **N = 58** |
-|:-----------------------------------------|:----------:|
-|__Motivo da ATQ__                         |            |
-|Coxartrose                                |  29 (50%)  |
-|Fraturas                                  |  19 (33%)  |
-|Outros                                    |  7 (12%)   |
-|Displasia                                 |  2 (3.4%)  |
-|Osteonecrose                              |  1 (1.7%)  |
-|__Deambulação__                           |            |
-|Bengala                                   |  40 (69%)  |
-|Livre                                     |  7 (12%)   |
-|Andador                                   |  6 (10%)   |
-|Cadeira de rodas                          |  5 (8.6%)  |
-|Leito                                     |   0 (0%)   |
-|__Revisões prévias de quadril__           |            |
-|0                                         |  4 (10%)   |
-|1                                         |  13 (33%)  |
-|2                                         |  22 (56%)  |
-|Desconhecido                              |     19     |
-|__Motivo de revisões prévias__            |            |
-|Soltura Asséptica Acetabular              |  23 (66%)  |
-|Soltura Asséptica de Ambos                |  7 (20%)   |
-|Infecção                                  |  2 (5.7%)  |
-|Soltura Asséptica Femoral                 |  2 (5.7%)  |
-|Fratura Periprotética                     |  1 (2.9%)  |
-|Desconhecido                              |     23     |
-|__Ciurgia (não ortop.) durante a espera__ |  3 (5.2%)  |
+```{r desc_cir}
+desc_cir %>% as_kable(align = "lc")
+```
 
 ## Tempo de espera de revisão de ATQ
 
+```{r moda_1, include=FALSE}
+dados %>%
+  filter(tempo_anos == 2) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
+```{r moda_2, include=FALSE}
+dados %>%
+  filter(tempo_anos == 6) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
 
+```{r t maior que 10, include=FALSE}
+dados %>%
+  filter(tempo_anos > 10) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky) %>%
+  kable()
+```
 
+```{r t menor que 1, include=FALSE}
+dados %>%
+  filter(tempo_anos == 0) %>%
+  select(tempo_anos, idade_num, sexo, diagnostico_atual, charlson, charlson_faixa, hhs, paprosky)
 
-
-
-
+```
 
 O tempo de espera médio é de 3.5 anos (Tabela 3).
 A distribuição de tempo de espera é bimodal (Fig 1), onde identifica-se dois grandes grupos de pacientes aguardando há 2 anos e 6 anos respectivamente.
@@ -208,14 +220,19 @@ Os dados clínicos do primeiro não foram obtidos e o diagnóstico atual da segu
 
 ## Características clínicas dos pacientes durante a espera
 
-
+```{r charlson_sens, include=FALSE}
+dados %>% transmute(charlson, charlson0 = na_if(charlson, 0)) %>% summarize(mean(charlson, na.rm = TRUE), mean(charlson0, na.rm = TRUE))
+clin.charl.0 <- inline_text(desc_clin, variable = charlson_faixa, level = "0%")
+clin.pap.2c <- inline_text(desc_clin, variable = paprosky, level = "2C")
+clin.pap.3a <- inline_text(desc_clin, variable = paprosky, level = "3A")
+```
 
 As características clinicas dos pacientes avaliados no questionário são apresentadas na Tabela 3.
 O diagnóstico atual mais prevalente é a Soltura Asséptica Acetabular, seguida da Soltura Asséptica de Ambos.
-O escore de Charlson médio na amostra é 3%, onde 29 (51%) pessoas possuem escore de 0%.
+O escore de Charlson médio na amostra é 3%, onde `r clin.charl.0` pessoas possuem escore de 0%.
 Considerando apenas as pessoas que possuem risco positivo de morrer no próximo ano o escore médio é 6%.
 Os escores de Harris (HHS) observados variaram de 10.6 a 80, com valor médio 41.
-A classificação de Paprosky mais prevalente é 2C com 19 (35%) pessoas, seguida de 3A com 11 (20%) pessoas.
+A classificação de Paprosky mais prevalente é 2C com `r clin.pap.2c` pessoas, seguida de 3A com `r clin.pap.3a` pessoas.
 Os pacientes atualmente na fila de espera fazem uso de diversos tipos de analgésicos, sendo AINES a classe individual de analésico mais usada.
 A maior parte dos pacientes investigados (34%) usam uma combinação de classes de analgésicos.
 Uma pequena parte da amostra (14%) faz uso de antidepressivos.
@@ -227,46 +244,9 @@ Usa ainda combinações de analgésicos e quando emprega uma única classe a AIN
 **Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
 AINES: anti-inflamatórios não esteroides.
 
-
-|**Características dos pacientes** | **N = 58**  |
-|:---------------------------------|:-----------:|
-|__Tempo de espera (anos)__        | 3.52 (3.21) |
-|__Diagnóstico atual__             |             |
-|Soltura Asséptica Acetabular      |  34 (72%)   |
-|Soltura Asséptica de Ambos        |  10 (21%)   |
-|Fratura Periprotética             |  1 (2.1%)   |
-|Infecção                          |  1 (2.1%)   |
-|Soltura Asséptica Femoral         |  1 (2.1%)   |
-|Desconhecido                      |     11      |
-|__Escore de Charlson__            |             |
-|0%                                |  29 (51%)   |
-|1% a 5%                           |  14 (25%)   |
-|6% a 10%                          |   8 (14%)   |
-|Maior que 10%                     |   6 (11%)   |
-|Desconhecido                      |      1      |
-|__HHS__                           |   41 (15)   |
-|Desconhecido                      |      1      |
-|__Classificação Paprosky__        |             |
-|2C                                |  19 (35%)   |
-|3A                                |  11 (20%)   |
-|2B                                |   8 (15%)   |
-|1                                 |   7 (13%)   |
-|2A                                |   7 (13%)   |
-|3B                                |  2 (3.7%)   |
-|3C                                |   0 (0%)    |
-|Desconhecido                      |      4      |
-|__Uso de antidepressivos__        |   8 (14%)   |
-|__Número de medicações em uso__   |             |
-|0                                 |  16 (28%)   |
-|1                                 |  19 (33%)   |
-|2                                 |  20 (34%)   |
-|3                                 |  3 (5.2%)   |
-|__Uso de analgésicos__            |             |
-|Vários                            |  20 (34%)   |
-|AINES                             |  18 (31%)   |
-|Nenhum                            |   9 (16%)   |
-|Opióides                          |   9 (16%)   |
-|Analgésicos                       |  2 (3.4%)   |
+```{r desc_clin}
+desc_clin %>% as_kable(align = "lc")
+```
 
 As duas medidas de risco aos pacientes utilizadas neste estudo foram correlacionadas para investigar se há associação entre suas distribuções de frequências.
 O índice de Charlson, quando convertido para porcentagem, confere uma quantificação do risco de morte no próximo ano.
@@ -277,15 +257,9 @@ Não podemos, nesta amostra, afirmar que determinadas classificações de Papros
 **Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
 p = teste exato de Fisher.
 
-
-|  **Características**   | 2B | 2C | 3A | Outras | **Total** | **valor p** |
-|:----------------------:|:--:|:--:|:--:|:------:|:---------:|:-----------:|
-| __Escore de Charlson__ |    |    |    |        |           |     0.5     |
-|           0%           | 5  | 10 | 5  |   6    |    26     |             |
-|        1% a 5%         | 2  | 6  | 2  |   4    |    14     |             |
-|        6% a 10%        | 0  | 2  | 1  |   5    |     8     |             |
-|     Maior que 10%      | 1  | 1  | 3  |   1    |     6     |             |
-|       __Total__        | 8  | 19 | 11 |   16   |    54     |             |
+```{r inf_charlson_pap3}
+inf_charlson_pap3 %>% as_kable(align = "c")
+```
 
 
 # Exceções e Observações
@@ -322,4 +296,6 @@ Usa combinações de analgésicos e quando emprega uma única classe a AINES é 
 
 Os dados utilizados neste relatório não podem ser publicados online por questões de sigilo.
 
-
+```{r data}
+# pander(analytic)
+```

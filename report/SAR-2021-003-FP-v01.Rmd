@@ -139,7 +139,7 @@ A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apont
 A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
 A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
 
-**Tabela 1** Características demográficas dos pacientes que aguardam revisão de ATQ.
+Table: **Tabela 1** Características demográficas dos pacientes que aguardam revisão de ATQ.
 Total da amostra e estratificação por sexo.
 p = teste t ou teste exato de Fisher;
 SM = salário mínimo
@@ -171,7 +171,7 @@ já realizaram pelo menos uma revisão por Soltura Asséptica Acetabular da ATQ,
 que originalmente foi realizada por coxartrose ou fratura.
 Sua deambulação frequentemente foi feita com uso de bengala ou livre.
 
-**Tabela 2** Características clínicas basais, relativas à ATQ.
+Table: **Tabela 2** Características clínicas basais, relativas à ATQ.
 Dados relativos a eventos anteriores à indicação da revisão em espera.
 
 ```{r desc_cir}
@@ -250,7 +250,7 @@ A descrição geral das características clínicas relativas à espera é que o 
 O paciente típico possui escore médio de Charlson 3%, escore médio de HHS 41 e classificação Paprosky 2C.
 Usa ainda combinações de analgésicos e quando emprega uma única classe a AINES é mais favorecida.
 
-**Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
+Table: **Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
 AINES: anti-inflamatórios não esteroides.
 
 ```{r desc_clin}
@@ -263,7 +263,7 @@ Na amostra, as três classificações de Paprosky mais prevalentes foram 2B, 2C 
 As ocorrências dessas três categorias parecem estar uniformemente distribuídas em relação às faixas consideradas para o escore de Charlson, sem associação detectável (p = 0.5).
 Não podemos, nesta amostra, afirmar que determinadas classificações de Paprosky estão associadas ao aumento do risco de morte no próximo ano conforme mensuradas pelo escore de Charlson.
 
-**Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
+Table: **Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
 p = teste exato de Fisher.
 
 ```{r inf_charlson_pap3}

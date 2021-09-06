@@ -149,3 +149,23 @@ dados <- dados %>%
 dados_clean <- dados
 dados <- dados %>%
   select(-c(data_de_nascimento, idade, acetabulo, femur, contralateral, cidade, obs))
+
+# analytical dataset ------------------------------------------------------
+
+analytical <- dados.raw %>%
+  # select analytic variables
+  select(
+    -data_de_nascimento,
+    -idade,
+    -acetabulo,
+    -femur,
+    -contralateral,
+    -cidade,
+    -obs,
+  )
+
+# mockup of analytical dataset for SAP and public SAR
+analytical_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(analytical)) ) ) %>%
+  left_join(dados %>% head(0), by = "id") %>%
+  mutate_all(as.character) %>%
+  replace(is.na(.), "")

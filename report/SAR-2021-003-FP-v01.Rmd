@@ -1,12 +1,13 @@
 ---
 title: "Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
-author: '**De:** Felipe Figueiredo **Para:** Fernando Pina'
-date: '**Data: ** 2021-07-14'
+subtitle: 'DOCUMENTO: SAR-2021-003-FP-v01'
+author: '**De:** Felipe Figueiredo **Para:** Fernando Pina Cabral'
+date: '**Data:** 2021-07-14'
 output:
   html_document:
     fig_caption: yes
-    fig_height: 4
-    fig_width: 4
+    fig_height: 6
+    fig_width: 6
     keep_md: yes
     number_sections: yes
     toc: yes
@@ -15,11 +16,10 @@ output:
     toc: yes
   word_document:
     fig_caption: yes
-    fig_height: 4
-    fig_width: 4
+    fig_height: 6
+    fig_width: 6
     reference_docx: misc/style_SAR_pt.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_FP_2021a-v01'
 toc-title: "Sumário"
 ---
 
@@ -31,14 +31,14 @@ library(pander)
 library(knitr)
 library(philsfmisc)
 panderOptions('table.style', 'rmarkdown')
-panderOptions('table.split.table', Inf)
+panderOptions('table.split.table', 160)
 ```
 
 ---
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Versão inicial")
 history <- cbind(Version, Changes)
@@ -49,36 +49,23 @@ kable(history)
 
 ---
 
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
-
 # Lista de abreviaturas
+
+- AINES: anti-inflamatórios não esteroides
+- ATQ: Artroplastia Total de Quadril
+- HHS: Harris Hip Score
+- SM: Salário Mínimo
 
 # Introdução
 
 ## Objetivos
 
+Descrever o perfil epidemiológico, o tempo de espera e o perfil de risco dos pacientes aguardando na fila de revisão de ATQ no estado de Santa Catarina.
+
 ## Recepção e tratamento dos dados
+
+Os dados brutos foram recebidos em tabela Excel, que foram tratados e limpos previamente à análise.
+Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
 
 # Metodologia
 
@@ -90,13 +77,39 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ### Desfechos primário e secundário
 
+Esta análise descreve as características epidemiológicas e o risco em pacientes que aguardam cirgia de revisão, e nenhum endpoint foi avaliado.
+
 ### Covariáveis
+
+As distribuições das características demográficas e clínicas foram descritas.
+As variáveis consideradas para inclusão na análise foram
+
+- Idade (anos)
+- Sexo
+- Escolaridade
+- Tabagismo e Etilismo
+- Status de aposentadoria e causa
+- Renda familiar (em SM)
+- Motivo da ATQ primária
+- Status na deambulação na ATQ primária
+- Diagnóstico atual
+- Número de revisões prévias e motivo
+- Uso de antidepressivos e analgésicos
+- Tempo de espera (anos)
+- Índice de Charlson
+- Escore de Harris (HHS)
+- Classificação de Paprosky
 
 ## Análises Estatísticas
 
+As características dos pacientes foram descritas de acordo com o tipo de variávei: variáveis contínuas foram descritas como média (DP) e variáveis categóricas como frequência e proporção.
+A associação entre o escore de Charlson e a classificação de Paprosky foi avaliada com o teste exato de Fisher.
+Todas as análises foram realizadas ao nível de significância de 5%.
+Todos os testes de hipóteses e intervalos de confiança calculados foram bicaudais.
+
 ### Softwares utilizados
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 # Resultados
 
@@ -126,7 +139,7 @@ A maior parte dos pacientes (90%) é aposentado, sendo a Invalidez a causa apont
 A descrição geral do perfil do paciente que aguarda cirurgia de revisão de ATQ é idosos aposentados por invalidez, com baixa escolaridade (tipicamente Fundamental incompleto) e de baixa renda (até 1 salário mínimo).
 A distribuição de sexos na amostra de estudo é uniforme, e as demais características demográficas não apresenta divergências óbvias entre homens e mulheres (Tabela 1).
 
-**Tabela 1** Características demográficas dos pacientes que aguardam revisão de ATQ.
+Table: **Tabela 1** Características demográficas dos pacientes que aguardam revisão de ATQ.
 Total da amostra e estratificação por sexo.
 p = teste t ou teste exato de Fisher;
 SM = salário mínimo
@@ -158,7 +171,7 @@ já realizaram pelo menos uma revisão por Soltura Asséptica Acetabular da ATQ,
 que originalmente foi realizada por coxartrose ou fratura.
 Sua deambulação frequentemente foi feita com uso de bengala ou livre.
 
-**Tabela 2** Características clínicas basais, relativas à ATQ.
+Table: **Tabela 2** Características clínicas basais, relativas à ATQ.
 Dados relativos a eventos anteriores à indicação da revisão em espera.
 
 ```{r desc_cir}
@@ -202,9 +215,10 @@ Os pacientes que aguardam há 5 ou 6 anos (n = 14) tem perfil semelhante, com id
 A maiorira possui índice de Charlson baixo (n = 7), mas 3 pacientes possuem Charlson entre 0% e 5%, e 4 pacientes possuem Charlson entre 5% e 10%.
 A classificação de Paprosky típica foi 2C (n=6) seguida das classificações 2A e 3A (n = 3, cada).
 
-![](../figures/dist_tempo.png)
-
-**Figura 1** Distribuição do tempo de espera para cirurgia de revisão
+```{r Fig1, fig.cap="**Figura 1** Distribuição do tempo de espera para cirurgia de revisão"}
+# ![](../figures/dist_tempo.png)
+knitr::include_graphics("../figures/dist_tempo.png", error = FALSE)
+```
 
 Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
 Estes são em sua maioria homens, com idades entre 48 e 69 anos.
@@ -236,7 +250,7 @@ A descrição geral das características clínicas relativas à espera é que o 
 O paciente típico possui escore médio de Charlson 3%, escore médio de HHS 41 e classificação Paprosky 2C.
 Usa ainda combinações de analgésicos e quando emprega uma única classe a AINES é mais favorecida.
 
-**Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
+Table: **Tabela 3** Características clínicas relativas à espera da cirurgia de revisão.
 AINES: anti-inflamatórios não esteroides.
 
 ```{r desc_clin}
@@ -249,7 +263,7 @@ Na amostra, as três classificações de Paprosky mais prevalentes foram 2B, 2C 
 As ocorrências dessas três categorias parecem estar uniformemente distribuídas em relação às faixas consideradas para o escore de Charlson, sem associação detectável (p = 0.5).
 Não podemos, nesta amostra, afirmar que determinadas classificações de Paprosky estão associadas ao aumento do risco de morte no próximo ano conforme mensuradas pelo escore de Charlson.
 
-**Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
+Table: **Tabela 4** Associação entre as classificações de risco: escore de Charlson e as 3 classificações de Paprosky mais frequentes na amostra.
 p = teste exato de Fisher.
 
 ```{r inf_charlson_pap3}
@@ -283,14 +297,34 @@ Usa combinações de analgésicos e quando emprega uma única classe a AINES é 
 
 # Referências
 
+- **SAP-2021-003-FP-v01** -- Plano Analítico para Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina
+<!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
+
 # Apêndice
 
 ## Análise exploratória de dados
+
+```{r A1, fig.cap="**Figura 1** Distribuição da idade na população do estudo."}
+# ![tempo](../figures/dist_tempo.png)
+# knitr::include_graphics("../figures/dist_tempo.png", error = FALSE)
+```
+
+## Disponibilidade
+
+Este documento pode ser obtido no seguinte endereço:
+
+https://github.com/philsf-biostat/SAR-2021-003-FP/
 
 ## Dados utilizados
 
 Os dados utilizados neste relatório não podem ser publicados online por questões de sigilo.
 
 ```{r data}
-# pander(analytic)
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+
+# analytical %>%
+#   pander(caption = "**Table A1** Tabela de dados analíticos")
+analytical_mockup %>%
+  pander(caption = "**Table A1** Estrutura da tabela de dados analíticos")
 ```
+

@@ -9,7 +9,7 @@
 
 Objetivo
 
-Análise de Dados projeto Fernando Pina (Santa Catarina, 2021)
+Análise de dados Fernando Pina Cabral (Instituto Catarinanse do Quadril, Florianópolis/SC, 2021)
 
 ## Análises realizadas
 

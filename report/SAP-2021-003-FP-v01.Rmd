@@ -1,7 +1,8 @@
 ---
-title: "Plano de Análise Estatística de Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
-author: '**De:** Felipe Figueiredo **Para:** Fernando Pina'
-date: '**Data: ** 2021-07-14'
+title: "Plano Analítico para Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
+subtitle: 'DOCUMENTO: SAP-2021-003-FP-v01'
+author: '**De:** Felipe Figueiredo **Para:** Fernando Pina Cabral'
+date: '**Data:** 2021-07-14'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +20,6 @@ output:
     fig_width: 6
     reference_docx: misc/style_SAP_pt.docx
     toc: yes
-subtitle: 'SAP: SAP_analise_dados_FP_2021a-v01'
 toc-title: "Sumário"
 ---
 
@@ -38,7 +38,7 @@ panderOptions('table.split.table', Inf)
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Versão inicial")
 history <- cbind(Version, Changes)
@@ -48,29 +48,6 @@ kable(history)
 ```
 
 ---
-
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
 
 # Lista de abreviaturas
 
@@ -82,7 +59,28 @@ kable(history)
 
 ## Hipóteses
 
-# Limpeza dos dados
+# Dados
+
+```{r cleaning, include=FALSE}
+source("scripts/input.R", encoding = 'UTF-8')
+```
+
+## Dados brutos
+
+## Tabela de dados analíticos
+
+Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
+Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
+
+Depois dos procedimentos de limpeza e seleção `r ncol(analytical)` variáveis foram incluídas na análise com `r nrow(analytical)` observações.
+A Tabela 1 mostra a estrutura dos dados analíticos.
+
+```{r analytical data}
+analytical_mockup %>%
+  pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
+```
+
+A tabela de dados analíticos serão disponibilizados na versão privada do relatório, e serão omitidas da versão pública do relatório.
 
 # Variáveis do estudo
 
@@ -106,7 +104,7 @@ kable(history)
 
 ## Softwares utilizados
 
-Esta análise será realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise será realizada utilizando-se o software `R` versão 4.1.0.
 
 <!-- # Resultados -->
 
@@ -116,5 +114,15 @@ Esta análise será realizada utilizando-se o software `R` versão `r getRversio
 
 # Referências
 
+- **SAR-2021-003-FP-v01** -- Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina
+<!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
+
 # Apêndice
+
+## Disponibilidade
+
+Tanto este plano analítico como o relatório correspondente (**SAR-2021-003-FP-v01**) podem ser obtidos no seguinte endereço:
+
+https://github.com/philsf-biostat/SAR-2021-003-FP/
+
 

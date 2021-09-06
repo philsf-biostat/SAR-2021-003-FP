@@ -1,13 +1,13 @@
 ---
 title: "Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina"
 subtitle: 'DOCUMENTO: SAR-2021-003-FP-v01'
-author: '**De:** Felipe Figueiredo **Para:** Fernando Pina'
+author: '**De:** Felipe Figueiredo **Para:** Fernando Pina Cabral'
 date: '**Data:** 2021-07-14'
 output:
   html_document:
     fig_caption: yes
-    fig_height: 4
-    fig_width: 4
+    fig_height: 6
+    fig_width: 6
     keep_md: yes
     number_sections: yes
     toc: yes
@@ -16,9 +16,9 @@ output:
     toc: yes
   word_document:
     fig_caption: yes
-    fig_height: 4
-    fig_width: 4
-    reference_docx: misc/style_SAR_pt-ub.docx
+    fig_height: 6
+    fig_width: 6
+    reference_docx: misc/style_SAR_pt.docx
     toc: yes
 toc-title: "Sumário"
 ---
@@ -38,7 +38,7 @@ panderOptions('table.split.table', Inf)
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Versão inicial")
 history <- cbind(Version, Changes)
@@ -48,29 +48,6 @@ kable(history)
 ```
 
 ---
-
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
 
 # Lista de abreviaturas
 
@@ -101,7 +78,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ### Softwares utilizados
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 4.1.0.
 
 # Resultados
 
@@ -207,9 +184,10 @@ Os pacientes que aguardam há 5 ou 6 anos (n = 14) tem perfil semelhante, com id
 A maiorira possui índice de Charlson baixo (n = 7), mas 3 pacientes possuem Charlson entre 0% e 5%, e 4 pacientes possuem Charlson entre 5% e 10%.
 A classificação de Paprosky típica foi 2C (n=6) seguida das classificações 2A e 3A (n = 3, cada).
 
-![](../figures/dist_tempo.png)
-
-**Figura 1** Distribuição do tempo de espera para cirurgia de revisão
+```{r Fig1, fig.cap="**Figura 1** Distribuição do tempo de espera para cirurgia de revisão"}
+# ![](../figures/dist_tempo.png)
+knitr::include_graphics("../figures/dist_tempo.png", error = FALSE)
+```
 
 Seis pacientes aguardam na fila há menos de 1 ano completo, com tempo de espera entre 6 e 10 meses.
 Estes são em sua maioria homens, com idades entre 48 e 69 anos.
@@ -288,14 +266,34 @@ Usa combinações de analgésicos e quando emprega uma única classe a AINES é 
 
 # Referências
 
+<!-- - **SAP-2021-003-FP-v01** -- Plano Analítico para title -->
+<!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
+
 # Apêndice
 
 ## Análise exploratória de dados
+
+```{r A1, fig.cap="**Figura 1** Distribuição da idade na população do estudo."}
+# ![tempo](../figures/dist_tempo.png)
+# knitr::include_graphics("../figures/dist_tempo.png", error = FALSE)
+```
+
+## Disponibilidade
+
+Este documento pode ser obtido no seguinte endereço:
+
+https://github.com/philsf-biostat/SAR-2021-003-FP/
 
 ## Dados utilizados
 
 Os dados utilizados neste relatório não podem ser publicados online por questões de sigilo.
 
 ```{r data}
-# pander(analytic)
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+
+# analytical %>%
+#   pander(caption = "**Table A1** Tabela de dados analíticos")
+analytical_mockup %>%
+  pander(caption = "**Table A1** Estrutura da tabela de dados analíticos")
 ```
+

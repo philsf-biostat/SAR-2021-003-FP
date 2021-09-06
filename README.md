@@ -7,7 +7,7 @@
 
 # Perfil epidemiológico de pacientes aguardando na fila de revisão de ATQ em Santa Catarina
 
-Objetivo
+Descrever o perfil epidemiológico, o tempo de espera e o perfil de risco dos pacientes aguardando na fila de revisão de ATQ no estado de Santa Catarina.
 
 Análise de dados Fernando Pina Cabral (Instituto Catarinanse do Quadril, Florianópolis/SC, 2021)
 

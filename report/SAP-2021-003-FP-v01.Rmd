@@ -57,6 +57,8 @@ kable(history)
 
 ## Objetivos
 
+Descrever o perfil epidemiológico, o tempo de espera e o perfil de risco dos pacientes aguardando na fila de revisão de ATQ no estado de Santa Catarina.
+
 ## Hipóteses
 
 # Dados
